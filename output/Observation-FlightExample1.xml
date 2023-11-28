@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="FlightExample1"/>
+  <meta>
+    <profile value="http://example.org/StructureDefinition/FlightItinerary1"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="FlightExample1"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;FlightExample1&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-FlightItinerary1.html">FlightItinerary1</a></p></div><p><b>status</b>: preliminary</p><p><b>category</b>: transportation <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-ActClass.html">ActClass</a>#TRNS)</span></p><p><b>code</b>: 424483007 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#424483007)</span></p><p><b>value</b>: Airliner <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#261325004)</span></p><blockquote><p><b>component</b></p><p><b>code</b>: Departure Airport <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>value</b>: LAX</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Arrival Airport <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>value</b>: DCA</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Flight Number <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>value</b>: DL679</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Seat <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>value</b>: 18F</p></blockquote></div>
+  </text>
+  <status value="preliminary"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActClass"/>
+      <code value="TRNS"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="424483007"/>
+    </coding>
+  </code>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="261325004"/>
+      <display value="Airliner"/>
+    </coding>
+  </valueCodeableConcept>
+  <component>
+    <code>
+      <text value="Departure Airport"/>
+    </code>
+    <valueString value="LAX"/>
+  </component>
+  <component>
+    <code>
+      <text value="Arrival Airport"/>
+    </code>
+    <valueString value="DCA"/>
+  </component>
+  <component>
+    <code>
+      <text value="Flight Number"/>
+    </code>
+    <valueString value="DL679"/>
+  </component>
+  <component>
+    <code>
+      <text value="Seat"/>
+    </code>
+    <valueString value="18F"/>
+  </component>
+</Observation>

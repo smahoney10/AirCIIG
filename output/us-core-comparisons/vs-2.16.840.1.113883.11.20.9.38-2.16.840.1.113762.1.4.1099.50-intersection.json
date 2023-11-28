@@ -1,0 +1,9 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "6412a161-6638-4a7d-b387-329e593e5d23-84",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/6412a161-6638-4a7d-b387-329e593e5d23-84",
+  "name" : "IntersectionSmoking StatusAndTransport vehicle type",
+  "title" : "Intersection of null And null",
+  "status" : "active",
+  "date" : "2023-11-28T09:30:42-05:00"
+}

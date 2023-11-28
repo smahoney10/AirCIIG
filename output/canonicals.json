@@ -1,0 +1,142 @@
+[
+  {
+    "id" : "airport-code-system",
+    "type" : "CodeSystem",
+    "url" : "http://example.org/CodeSystem/airport-code-system",
+    "version" : "0.1.0",
+    "name" : "AirportCodesCS"
+  },
+  {
+    "id" : "infectious-disease-system",
+    "type" : "CodeSystem",
+    "url" : "http://example.org/CodeSystem/infectious-disease-system",
+    "version" : "0.1.0",
+    "name" : "InfectiousDiseaseNameCS"
+  },
+  {
+    "id" : "quarantine-station-system",
+    "type" : "CodeSystem",
+    "url" : "http://example.org/CodeSystem/quarantine-station-system",
+    "version" : "0.1.0",
+    "name" : "QuantineStationsCS"
+  },
+  {
+    "id" : "hl7.fhir.us.illTraveler",
+    "type" : "ImplementationGuide",
+    "url" : "http://example.org/ImplementationGuide/hl7.fhir.us.illTraveler",
+    "version" : "0.1.0",
+    "name" : "CDCDGMQReportofIllTraveler"
+  },
+  {
+    "id" : "FlightItinerary1",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/FlightItinerary1",
+    "version" : "0.1.0",
+    "name" : "FlightItinerary1"
+  },
+  {
+    "id" : "FlightItinerary2",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/FlightItinerary2",
+    "version" : "0.1.0",
+    "name" : "FlightItinerary2"
+  },
+  {
+    "id" : "InfectiousDisease",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/InfectiousDisease",
+    "version" : "0.1.0",
+    "name" : "InfectiousDisease"
+  },
+  {
+    "id" : "ReportOfIllTraveler",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/ReportOfIllTraveler",
+    "version" : "0.1.0",
+    "name" : "ReportOfIllTraveler"
+  },
+  {
+    "id" : "Traveler",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/Traveler",
+    "version" : "0.1.0",
+    "name" : "Traveler"
+  },
+  {
+    "id" : "chest-xray",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/chest-xray",
+    "version" : "0.1.0",
+    "name" : "ChestXrayResults"
+  },
+  {
+    "id" : "disease-name",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/disease-name",
+    "version" : "0.1.0",
+    "name" : "InfectiousDiseaseName"
+  },
+  {
+    "id" : "flight-duration",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/flight-duration",
+    "version" : "0.1.0",
+    "name" : "FlightDuration"
+  },
+  {
+    "id" : "lab-results",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/lab-results",
+    "version" : "0.1.0",
+    "name" : "LabResults"
+  },
+  {
+    "id" : "qstation-name",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/qstation-name",
+    "version" : "0.1.0",
+    "name" : "Qstation"
+  },
+  {
+    "id" : "transfer-date",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/transfer-date",
+    "version" : "0.1.0",
+    "name" : "DateTransferedToQstation"
+  },
+  {
+    "id" : "AirportCodeVS",
+    "type" : "ValueSet",
+    "url" : "http://example.org/ValueSet/AirportCodeVS",
+    "version" : "0.1.0",
+    "name" : "AirportCodeVS"
+  },
+  {
+    "id" : "InfectiousDiseaseNameVS",
+    "type" : "ValueSet",
+    "url" : "http://example.org/ValueSet/InfectiousDiseaseNameVS",
+    "version" : "0.1.0",
+    "name" : "InfectiousDiseaseNameVS"
+  },
+  {
+    "id" : "InfectiousDiseaseVS",
+    "type" : "ValueSet",
+    "url" : "http://example.org/ValueSet/InfectiousDiseaseVS",
+    "version" : "0.1.0",
+    "name" : "InfectiousDiseaseVS"
+  },
+  {
+    "id" : "QstationsVS",
+    "type" : "ValueSet",
+    "url" : "http://example.org/ValueSet/QstationsVS",
+    "version" : "0.1.0",
+    "name" : "QstationsVS"
+  },
+  {
+    "id" : "TuberculosisVS",
+    "type" : "ValueSet",
+    "url" : "http://example.org/ValueSet/TuberculosisVS",
+    "version" : "0.1.0",
+    "name" : "TuberculosisVS"
+  }
+]

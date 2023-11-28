@@ -1,0 +1,68 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/Observation/FlightExample1> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "FlightExample1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://example.org/StructureDefinition/FlightItinerary1"^^xsd:anyURI ;
+       fhir:link <http://example.org/StructureDefinition/FlightItinerary1>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"FlightExample1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;FlightExample1&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-FlightItinerary1.html\">FlightItinerary1</a></p></div><p><b>status</b>: preliminary</p><p><b>category</b>: transportation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-ActClass.html\">ActClass</a>#TRNS)</span></p><p><b>code</b>: 424483007 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#424483007)</span></p><p><b>value</b>: Airliner <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#261325004)</span></p><blockquote><p><b>component</b></p><p><b>code</b>: Departure Airport <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>value</b>: LAX</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Arrival Airport <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>value</b>: DCA</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Flight Number <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>value</b>: DL679</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Seat <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>value</b>: 18F</p></blockquote></div>"
+  ] ; # 
+  fhir:status [ fhir:v "preliminary"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActClass"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "TRNS" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:424483007 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "424483007" ]
+     ] )
+  ] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:261325004 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "261325004" ] ;
+       fhir:display [ fhir:v "Airliner" ]
+     ] )
+  ] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:text [ fhir:v "Departure Airport" ]
+     ] ;
+     fhir:value [ fhir:v "LAX" ]
+  ] [
+     fhir:code [
+       fhir:text [ fhir:v "Arrival Airport" ]
+     ] ;
+     fhir:value [ fhir:v "DCA" ]
+  ] [
+     fhir:code [
+       fhir:text [ fhir:v "Flight Number" ]
+     ] ;
+     fhir:value [ fhir:v "DL679" ]
+  ] [
+     fhir:code [
+       fhir:text [ fhir:v "Seat" ]
+     ] ;
+     fhir:value [ fhir:v "18F" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

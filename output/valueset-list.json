@@ -1,0 +1,51 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://example.org/ValueSet/AirportCodeVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "AirportCodeVS",
+      "title" : "Airport Codes VS",
+      "description" : "A list of USA Airport Codes.",
+      "systems" : ["http://example.org/CodeSystem/airport-code-system"]
+    },
+    {
+      "url" : "http://example.org/ValueSet/InfectiousDiseaseNameVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "InfectiousDiseaseNameVS",
+      "title" : "Infectious Disease VS",
+      "description" : "A list of all Valid Tuberculosis Codes.",
+      "systems" : ["http://example.org/CodeSystem/infectious-disease-system"]
+    },
+    {
+      "url" : "http://example.org/ValueSet/InfectiousDiseaseVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "InfectiousDiseaseVS",
+      "title" : "Infectious Disease VS",
+      "description" : "Codes indicating the Infectious Disease.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://example.org/ValueSet/QstationsVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "QstationsVS",
+      "title" : "Quarintine Stations VS",
+      "description" : "A list of all US Quarantine Stations.",
+      "systems" : ["http://example.org/CodeSystem/quarantine-station-system"]
+    },
+    {
+      "url" : "http://example.org/ValueSet/TuberculosisVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TuberculosisVS",
+      "title" : "Tuberculosis VS",
+      "description" : "A list of all Valid Tuberculosis Codes.",
+      "systems" : [
+        "https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.43/expansion"
+      ]
+    }
+  ]
+}

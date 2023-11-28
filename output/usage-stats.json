@@ -1,0 +1,151 @@
+{
+  "package": "hl7.fhir.us.illTraveler",
+  "version": "0.1.0",
+  "fhirVersion": "4.0.1",
+  "extensions": [
+    {
+      "url": "http://example.org/StructureDefinition/chest-xray",
+      "title": "Chest X-ray",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://example.org/StructureDefinition/disease-name",
+      "title": "Name of Disease",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://example.org/StructureDefinition/flight-duration",
+      "title": "Duration of the flight",
+      "types": [
+        "decimal"
+      ]
+    },
+    {
+      "url": "http://example.org/StructureDefinition/lab-results",
+      "title": "Lab Results",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://example.org/StructureDefinition/qstation-name",
+      "title": "Q-station Name",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://example.org/StructureDefinition/transfer-date",
+      "title": "Ill traveler transfer date",
+      "types": [
+        "date"
+      ]
+    }
+  ],
+  "profiles": {
+    "Observation": [
+      {
+        "url": "http://example.org/StructureDefinition/FlightItinerary1",
+        "title": "FlightItinerary1"
+      },
+      {
+        "url": "http://example.org/StructureDefinition/FlightItinerary2",
+        "title": "FlightItinerary2"
+      }
+    ],
+    "Condition": [
+      {
+        "url": "http://example.org/StructureDefinition/InfectiousDisease",
+        "title": "InfectiousDisease"
+      }
+    ],
+    "Composition": [
+      {
+        "url": "http://example.org/StructureDefinition/ReportOfIllTraveler",
+        "title": "ReportOfIllTraveler"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "http://example.org/StructureDefinition/Traveler",
+        "title": "Traveler"
+      }
+    ]
+  },
+  "usage": {
+    "http://example.org/StructureDefinition/chest-xray": [
+      "Condition.evidence"
+    ],
+    "http://example.org/StructureDefinition/disease-name": [
+      "Condition"
+    ],
+    "http://example.org/StructureDefinition/flight-duration": [
+      "Observation"
+    ],
+    "http://example.org/StructureDefinition/qstation-name": [
+      "Composition"
+    ],
+    "http://example.org/StructureDefinition/transfer-date": [
+      "Composition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race": [
+      "Patient"
+    ]
+  }
+}
