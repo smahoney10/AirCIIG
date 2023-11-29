@@ -33,7 +33,13 @@
      fhir:link <http://example.org/Organization/StateExample> ;
      fhir:reference [ fhir:v "Organization/StateExample" ]
   ] ) ; # 
-  fhir:title [ fhir:v "Report of Ill Traveler"] . # 
+  fhir:title [ fhir:v "Report of Ill Traveler"] ; # 
+  fhir:section ( [
+     fhir:entry ( [
+       fhir:link <http://example.org/Condition/TuberculosisExample> ;
+       fhir:reference [ fhir:v "Condition/TuberculosisExample" ]
+     ] )
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 

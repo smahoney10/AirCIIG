@@ -10,7 +10,7 @@
   "name" : "CDCDGMQReportofIllTraveler",
   "title" : "CDC DGMQ Report of Ill Traveler",
   "status" : "draft",
-  "date" : "2023-11-28T09:30:35-05:00",
+  "date" : "2023-11-28T21:37:28-05:00",
   "publisher" : "HL7 Public Health Working Group",
   "contact" : [{
     "name" : "HL7 Public Health Working Group",
@@ -702,11 +702,11 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/FlightExample1"
+        "reference" : "Observation/FlightExample"
       },
-      "name" : "FlightExample1",
-      "description" : "An example of a flight info.",
-      "exampleCanonical" : "http://example.org/StructureDefinition/FlightItinerary1"
+      "name" : "FlightExample",
+      "description" : "An example of a flight itinerary.",
+      "exampleCanonical" : "http://example.org/StructureDefinition/FlightItinerary"
     },
     {
       "extension" : [{
@@ -714,21 +714,9 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/FlightItinerary1"
+        "reference" : "StructureDefinition/FlightItinerary"
       },
-      "name" : "FlightItinerary1",
-      "description" : "Flight info for an ill traveler",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/FlightItinerary2"
-      },
-      "name" : "FlightItinerary2",
+      "name" : "FlightItinerary",
       "description" : "Flight information for an ill traveler",
       "exampleBoolean" : false
     },
@@ -850,6 +838,18 @@
       },
       "name" : "Quarintine Stations VS",
       "description" : "A list of all US Quarantine Stations.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/rash-onset"
+      },
+      "name" : "Rash Onset Date",
+      "description" : "Date when rash appeared",
       "exampleBoolean" : false
     },
     {

@@ -28,18 +28,11 @@
     "name" : "CDCDGMQReportofIllTraveler"
   },
   {
-    "id" : "FlightItinerary1",
+    "id" : "FlightItinerary",
     "type" : "StructureDefinition",
-    "url" : "http://example.org/StructureDefinition/FlightItinerary1",
+    "url" : "http://example.org/StructureDefinition/FlightItinerary",
     "version" : "0.1.0",
-    "name" : "FlightItinerary1"
-  },
-  {
-    "id" : "FlightItinerary2",
-    "type" : "StructureDefinition",
-    "url" : "http://example.org/StructureDefinition/FlightItinerary2",
-    "version" : "0.1.0",
-    "name" : "FlightItinerary2"
+    "name" : "FlightItinerary"
   },
   {
     "id" : "InfectiousDisease",
@@ -96,6 +89,13 @@
     "url" : "http://example.org/StructureDefinition/qstation-name",
     "version" : "0.1.0",
     "name" : "Qstation"
+  },
+  {
+    "id" : "rash-onset",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/rash-onset",
+    "version" : "0.1.0",
+    "name" : "RashOnsetDate"
   },
   {
     "id" : "transfer-date",

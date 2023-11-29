@@ -1,22 +1,21 @@
 ﻿CDCDGMQReportofIllTraveler : Validation Results
 =========================================
 
-err = 19, warn = 48, info = 4
+err = 36, warn = 50, info = 4
 IG Publisher Version: 1.5.0 Out of date - current version is 1.5.5
-Generated Tue Nov 28 09:33:09 EST 2023. FHIR version 4.0.1 for hl7.fhir.us.illTraveler#0.1.0 (canonical = http://example.org)
+Generated Tue Nov 28 21:39:56 EST 2023. FHIR version 4.0.1 for hl7.fhir.us.illTraveler#0.1.0 (canonical = http://example.org)
  Build Errors : 2 / 4 / 0
  C:\Users\smahoney\Documents\GitHub\AirCI\fsh-generated\resources\CodeSystem-airport-code-system : 0 / 3 / 2
  C:\Users\smahoney\Documents\GitHub\AirCI\fsh-generated\resources\CodeSystem-infectious-disease-system : 0 / 3 / 2
  C:\Users\smahoney\Documents\GitHub\AirCI\fsh-generated\resources\CodeSystem-quarantine-station-system : 0 / 3 / 2
- C:\Users\smahoney\Documents\GitHub\AirCI\fsh-generated\resources\Composition-ReportOfIllTravelerExample : 3 / 1 / 1
+ C:\Users\smahoney\Documents\GitHub\AirCI\fsh-generated\resources\Composition-ReportOfIllTravelerExample : 5 / 1 / 1
  C:\Users\smahoney\Documents\GitHub\AirCI\fsh-generated\resources\Condition-TuberculosisExample : 2 / 1 / 2
  C:\Users\smahoney\Documents\GitHub\AirCI\fsh-generated\resources\DiagnosticReport-ChestXrayResultsExample : 0 / 3 / 1
  C:\Users\smahoney\Documents\GitHub\AirCI\fsh-generated\resources\ImplementationGuide-hl7.fhir.us.illTraveler : 0 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\AirCI\fsh-generated\resources\Observation-FlightExample1 : 0 / 3 / 1
+ C:\Users\smahoney\Documents\GitHub\AirCI\fsh-generated\resources\Observation-FlightExample : 15 / 5 / 1
  C:\Users\smahoney\Documents\GitHub\AirCI\fsh-generated\resources\Organization-StateExample : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\AirCI\fsh-generated\resources\Patient-travelerExample : 1 / 0 / 1
- C:\Users\smahoney\Documents\GitHub\AirCI\fsh-generated\resources\StructureDefinition-FlightItinerary1 : 1 / 1 / 1
- C:\Users\smahoney\Documents\GitHub\AirCI\fsh-generated\resources\StructureDefinition-FlightItinerary2 : 1 / 2 / 1
+ C:\Users\smahoney\Documents\GitHub\AirCI\fsh-generated\resources\StructureDefinition-FlightItinerary : 1 / 1 / 1
  C:\Users\smahoney\Documents\GitHub\AirCI\fsh-generated\resources\StructureDefinition-InfectiousDisease : 1 / 1 / 1
  C:\Users\smahoney\Documents\GitHub\AirCI\fsh-generated\resources\StructureDefinition-ReportOfIllTraveler : 1 / 2 / 1
  C:\Users\smahoney\Documents\GitHub\AirCI\fsh-generated\resources\StructureDefinition-Traveler : 1 / 0 / 1
@@ -25,6 +24,7 @@ Generated Tue Nov 28 09:33:09 EST 2023. FHIR version 4.0.1 for hl7.fhir.us.illTr
  C:\Users\smahoney\Documents\GitHub\AirCI\fsh-generated\resources\StructureDefinition-flight-duration : 1 / 2 / 1
  C:\Users\smahoney\Documents\GitHub\AirCI\fsh-generated\resources\StructureDefinition-lab-results : 1 / 2 / 1
  C:\Users\smahoney\Documents\GitHub\AirCI\fsh-generated\resources\StructureDefinition-qstation-name : 1 / 2 / 1
+ C:\Users\smahoney\Documents\GitHub\AirCI\fsh-generated\resources\StructureDefinition-rash-onset : 1 / 2 / 1
  C:\Users\smahoney\Documents\GitHub\AirCI\fsh-generated\resources\StructureDefinition-transfer-date : 1 / 2 / 1
  C:\Users\smahoney\Documents\GitHub\AirCI\fsh-generated\resources\ValueSet-AirportCodeVS : 0 / 2 / 1
  C:\Users\smahoney\Documents\GitHub\AirCI\fsh-generated\resources\ValueSet-InfectiousDiseaseNameVS : 0 / 2 / 1
@@ -58,6 +58,8 @@ WARNING: CodeSystem.jurisdiction: The resource should declare its jurisdiction t
 ERROR: Composition/ReportOfIllTravelerExample: Composition.author[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: code in profile http://example.org/StructureDefinition/ReportOfIllTraveler on element Composition.author:stateContact, looking in profile http://example.org/StructureDefinition/ReportOfIllTraveler (@char 1)
 ERROR: Composition/ReportOfIllTravelerExample: Composition.author[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: code in profile http://example.org/StructureDefinition/ReportOfIllTraveler on element Composition.author:localContact, looking in profile http://example.org/StructureDefinition/ReportOfIllTraveler (@char 1)
 ERROR: Composition/ReportOfIllTravelerExample: Composition.author[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: code in profile http://example.org/StructureDefinition/ReportOfIllTraveler on element Composition.author:diseaseContact, looking in profile http://example.org/StructureDefinition/ReportOfIllTraveler (@char 1)
+ERROR: Composition/ReportOfIllTravelerExample: Composition.section[0]: Slicing cannot be evaluated: Could not match discriminator (1) for slice [code] in profile Composition.section:flightItinerary - the discriminator http://example.org/StructureDefinition/ReportOfIllTraveler|0.1.0 does not have fixed value, binding or existence assertions
+ERROR: Composition/ReportOfIllTravelerExample: Composition.section[0]: Slicing cannot be evaluated: Could not match discriminator (1) for slice [code] in profile Composition.section:infectiousDisease - the discriminator http://example.org/StructureDefinition/ReportOfIllTraveler|0.1.0 does not have fixed value, binding or existence assertions
 WARNING: Composition/ReportOfIllTravelerExample: Composition.type.coding[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 == fsh-generated\resources\Condition-TuberculosisExample.json ==
 INFORMATION: Condition/TuberculosisExample: Condition.evidence[0]: This element does not match any known slice defined in the profile http://example.org/StructureDefinition/InfectiousDisease|0.1.0
@@ -70,20 +72,33 @@ WARNING: DiagnosticReport/ChestXrayResultsExample: DiagnosticReport.code.coding[
 WARNING: DiagnosticReport/ChestXrayResultsExample: DiagnosticReport.presentedForm[0]: Attachments have data and/or url, or else SHOULD have either contentType and/or language
 == fsh-generated\resources\ImplementationGuide-hl7.fhir.us.illTraveler.json ==
 WARNING: ImplementationGuide.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.us.illTraveler, jurisdiction = urn:iso:std:iso:3166#US instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#US "null"')
-== fsh-generated\resources\Observation-FlightExample1.json ==
-WARNING: Observation/FlightExample1: Observation: Best Practice Recommendation: In general, all observations should have a subject
-WARNING: Observation/FlightExample1: Observation: Best Practice Recommendation: In general, all observations should have a performer
-WARNING: Observation/FlightExample1: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+== fsh-generated\resources\Observation-FlightExample.json ==
+ERROR: Observation/FlightExample: Observation.component[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: string in profile http://example.org/StructureDefinition/FlightItinerary on element Observation.component:flight, looking in profile http://example.org/StructureDefinition/FlightItinerary (@char 1)
+ERROR: Observation/FlightExample: Observation.component[1]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: string in profile http://example.org/StructureDefinition/FlightItinerary on element Observation.component:flight, looking in profile http://example.org/StructureDefinition/FlightItinerary (@char 1)
+ERROR: Observation/FlightExample: Observation.component[2]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: string in profile http://example.org/StructureDefinition/FlightItinerary on element Observation.component:flight, looking in profile http://example.org/StructureDefinition/FlightItinerary (@char 1)
+ERROR: Observation/FlightExample: Observation.component[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: string in profile http://example.org/StructureDefinition/FlightItinerary on element Observation.component:flight/departureAirport, looking in profile http://example.org/StructureDefinition/FlightItinerary (@char 1)
+ERROR: Observation/FlightExample: Observation.component[1]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: string in profile http://example.org/StructureDefinition/FlightItinerary on element Observation.component:flight/departureAirport, looking in profile http://example.org/StructureDefinition/FlightItinerary (@char 1)
+ERROR: Observation/FlightExample: Observation.component[2]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: string in profile http://example.org/StructureDefinition/FlightItinerary on element Observation.component:flight/departureAirport, looking in profile http://example.org/StructureDefinition/FlightItinerary (@char 1)
+ERROR: Observation/FlightExample: Observation.component[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: string in profile http://example.org/StructureDefinition/FlightItinerary on element Observation.component:flight/arrivalAirport, looking in profile http://example.org/StructureDefinition/FlightItinerary (@char 1)
+ERROR: Observation/FlightExample: Observation.component[1]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: string in profile http://example.org/StructureDefinition/FlightItinerary on element Observation.component:flight/arrivalAirport, looking in profile http://example.org/StructureDefinition/FlightItinerary (@char 1)
+ERROR: Observation/FlightExample: Observation.component[2]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: string in profile http://example.org/StructureDefinition/FlightItinerary on element Observation.component:flight/arrivalAirport, looking in profile http://example.org/StructureDefinition/FlightItinerary (@char 1)
+ERROR: Observation/FlightExample: Observation.component[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: string in profile http://example.org/StructureDefinition/FlightItinerary on element Observation.component:flight/flightNumber, looking in profile http://example.org/StructureDefinition/FlightItinerary (@char 1)
+ERROR: Observation/FlightExample: Observation.component[1]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: string in profile http://example.org/StructureDefinition/FlightItinerary on element Observation.component:flight/flightNumber, looking in profile http://example.org/StructureDefinition/FlightItinerary (@char 1)
+ERROR: Observation/FlightExample: Observation.component[2]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: string in profile http://example.org/StructureDefinition/FlightItinerary on element Observation.component:flight/flightNumber, looking in profile http://example.org/StructureDefinition/FlightItinerary (@char 1)
+ERROR: Observation/FlightExample: Observation.component[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: string in profile http://example.org/StructureDefinition/FlightItinerary on element Observation.component:flight/seatNumber, looking in profile http://example.org/StructureDefinition/FlightItinerary (@char 1)
+ERROR: Observation/FlightExample: Observation.component[1]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: string in profile http://example.org/StructureDefinition/FlightItinerary on element Observation.component:flight/seatNumber, looking in profile http://example.org/StructureDefinition/FlightItinerary (@char 1)
+ERROR: Observation/FlightExample: Observation.component[2]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: string in profile http://example.org/StructureDefinition/FlightItinerary on element Observation.component:flight/seatNumber, looking in profile http://example.org/StructureDefinition/FlightItinerary (@char 1)
+WARNING: Observation/FlightExample: Observation.component[1].code.coding[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Observation/FlightExample: Observation.component[2].code.coding[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Observation/FlightExample: Observation: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Observation/FlightExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/FlightExample: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 == fsh-generated\resources\Organization-StateExample.json ==
 == fsh-generated\resources\Patient-travelerExample.json ==
 ERROR: Patient/travelerExample: Patient.gender: The value provided ('Male') is not in the value set 'AdministrativeGender' (http://hl7.org/fhir/ValueSet/administrative-gender|4.0.1), and a code is required from this value set  (error message = Unknown Code 'Male' in the system 'http://hl7.org/fhir/administrative-gender|4.0.1'; The provided code 'http://hl7.org/fhir/administrative-gender#Male' is not in the value set 'http://hl7.org/fhir/ValueSet/administrative-gender|4.0.1')
-== fsh-generated\resources\StructureDefinition-FlightItinerary1.json ==
+== fsh-generated\resources\StructureDefinition-FlightItinerary.json ==
 ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.us.illTraveler, jurisdiction = urn:iso:std:iso:3166#US) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#US "null"')
-WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/FlightItinerary1').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
-== fsh-generated\resources\StructureDefinition-FlightItinerary2.json ==
-ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.us.illTraveler, jurisdiction = urn:iso:std:iso:3166#US) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#US "null"')
-WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/FlightItinerary2').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
-WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/FlightItinerary2'): The Implementation Guide contains no examples for this profile
+WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/FlightItinerary').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
 == fsh-generated\resources\StructureDefinition-InfectiousDisease.json ==
 ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.us.illTraveler, jurisdiction = urn:iso:std:iso:3166#US) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#US "null"')
 WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/InfectiousDisease').baseDefinition: US FHIR Usage rules require that all profiles on Condition derive from one of the base US profiles
@@ -111,6 +126,10 @@ WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition
 WARNING: StructureDefinition/qstation-name: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
 ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.us.illTraveler, jurisdiction = urn:iso:std:iso:3166#US) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#US "null"')
 WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/qstation-name'): The Implementation Guide contains no examples for this extension
+== fsh-generated\resources\StructureDefinition-rash-onset.json ==
+WARNING: StructureDefinition/rash-onset: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.us.illTraveler, jurisdiction = urn:iso:std:iso:3166#US) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#US "null"')
+WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/rash-onset'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-transfer-date.json ==
 WARNING: StructureDefinition/transfer-date: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
 ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.us.illTraveler, jurisdiction = urn:iso:std:iso:3166#US) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#US "null"')

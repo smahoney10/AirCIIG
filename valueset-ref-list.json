@@ -10,6 +10,7 @@
       "systems" : ["http://example.org/CodeSystem/airport-code-system"],
       "uses" : {
       },
+      "StructureDefinition-FlightItinerary.html" : "FlightItinerary",
       "StructureDefinition-InfectiousDisease.html" : "InfectiousDisease"
     },
     {

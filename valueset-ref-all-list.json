@@ -10,8 +10,7 @@
       "systems" : ["http://snomed.info/sct"],
       "uses" : {
       },
-      "StructureDefinition-FlightItinerary1.html" : "FlightItinerary1",
-      "StructureDefinition-FlightItinerary2.html" : "FlightItinerary2"
+      "StructureDefinition-FlightItinerary.html" : "FlightItinerary"
     },
     {
       "url" : "http://example.org/ValueSet/AirportCodeVS",
@@ -23,6 +22,7 @@
       "systems" : ["http://example.org/CodeSystem/airport-code-system"],
       "uses" : {
       },
+      "StructureDefinition-FlightItinerary.html" : "FlightItinerary",
       "StructureDefinition-InfectiousDisease.html" : "InfectiousDisease"
     },
     {
@@ -126,8 +126,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.141"],
       "uses" : {
       },
-      "StructureDefinition-FlightItinerary1.html" : "FlightItinerary1",
-      "StructureDefinition-FlightItinerary2.html" : "FlightItinerary2",
+      "StructureDefinition-FlightItinerary.html" : "FlightItinerary",
       "StructureDefinition-InfectiousDisease.html" : "InfectiousDisease"
     },
     {
@@ -296,8 +295,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.5"],
       "uses" : {
       },
-      "StructureDefinition-FlightItinerary1.html" : "FlightItinerary1",
-      "StructureDefinition-FlightItinerary2.html" : "FlightItinerary2"
+      "StructureDefinition-FlightItinerary.html" : "FlightItinerary"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/doc-section-codes",
@@ -395,11 +393,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-FlightItinerary1.html" : "FlightItinerary1",
-      "StructureDefinition-FlightItinerary2.html" : "FlightItinerary2",
-      "StructureDefinition-InfectiousDisease.html" : "InfectiousDisease",
+      "StructureDefinition-Traveler.html" : "Traveler",
       "StructureDefinition-ReportOfIllTraveler.html" : "ReportOfIllTraveler",
-      "StructureDefinition-Traveler.html" : "Traveler"
+      "StructureDefinition-FlightItinerary.html" : "FlightItinerary",
+      "StructureDefinition-InfectiousDisease.html" : "InfectiousDisease"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -514,8 +511,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.403"],
       "uses" : {
       },
-      "StructureDefinition-FlightItinerary1.html" : "FlightItinerary1",
-      "StructureDefinition-FlightItinerary2.html" : "FlightItinerary2"
+      "StructureDefinition-FlightItinerary.html" : "FlightItinerary"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
@@ -529,8 +525,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.396"],
       "uses" : {
       },
-      "StructureDefinition-FlightItinerary1.html" : "FlightItinerary1",
-      "StructureDefinition-FlightItinerary2.html" : "FlightItinerary2"
+      "StructureDefinition-FlightItinerary.html" : "FlightItinerary"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-interpretation",
@@ -546,8 +541,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.399"],
       "uses" : {
       },
-      "StructureDefinition-FlightItinerary1.html" : "FlightItinerary1",
-      "StructureDefinition-FlightItinerary2.html" : "FlightItinerary2"
+      "StructureDefinition-FlightItinerary.html" : "FlightItinerary"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-methods",
@@ -561,8 +555,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.395"],
       "uses" : {
       },
-      "StructureDefinition-FlightItinerary1.html" : "FlightItinerary1",
-      "StructureDefinition-FlightItinerary2.html" : "FlightItinerary2"
+      "StructureDefinition-FlightItinerary.html" : "FlightItinerary"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-status",
@@ -576,8 +569,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.400"],
       "uses" : {
       },
-      "StructureDefinition-FlightItinerary1.html" : "FlightItinerary1",
-      "StructureDefinition-FlightItinerary2.html" : "FlightItinerary2"
+      "StructureDefinition-FlightItinerary.html" : "FlightItinerary"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
@@ -608,8 +600,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.407"],
       "uses" : {
       },
-      "StructureDefinition-FlightItinerary1.html" : "FlightItinerary1",
-      "StructureDefinition-FlightItinerary2.html" : "FlightItinerary2"
+      "StructureDefinition-FlightItinerary.html" : "FlightItinerary"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/referencerange-meaning",
@@ -625,8 +616,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.397"],
       "uses" : {
       },
-      "StructureDefinition-FlightItinerary1.html" : "FlightItinerary1",
-      "StructureDefinition-FlightItinerary2.html" : "FlightItinerary2"
+      "StructureDefinition-FlightItinerary.html" : "FlightItinerary"
     },
     {
       "url" : "http://hl7.org/fhir/us/core/ValueSet/simple-language",

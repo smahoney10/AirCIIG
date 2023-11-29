@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "6412a161-6638-4a7d-b387-329e593e5d23-162",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/6412a161-6638-4a7d-b387-329e593e5d23-162",
+  "id" : "0d17484c-5e62-4f4c-b114-05e19e010a1e-96",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/0d17484c-5e62-4f4c-b114-05e19e010a1e-96",
   "name" : "IntersectionUSCoreConditionProblemsHealthConcernsProfileAndInfectiousDisease",
   "title" : "Intersection of US Core Condition Problems and Health Concerns Profile And null",
   "status" : "active",
-  "date" : "2023-11-28T09:30:42-05:00",
+  "date" : "2023-11-28T21:37:35-05:00",
   "snapshot" : {
     "element" : [{
       "path" : "Condition",

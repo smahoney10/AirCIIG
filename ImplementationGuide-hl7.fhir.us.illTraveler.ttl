@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "CDCDGMQReportofIllTraveler"] ; # 
   fhir:title [ fhir:v "CDC DGMQ Report of Ill Traveler"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-11-28T09:30:35-05:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-11-28T21:37:28-05:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Public Health Working Group"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Public Health Working Group" ] ;
@@ -613,14 +613,14 @@
          fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/Observation/FlightExample1> ;
-         fhir:reference [ fhir:v "Observation/FlightExample1" ]
+         fhir:link <http://example.org/Observation/FlightExample> ;
+         fhir:reference [ fhir:v "Observation/FlightExample" ]
        ] ;
-       fhir:name [ fhir:v "FlightExample1" ] ;
-       fhir:description [ fhir:v "An example of a flight info." ] ;
+       fhir:name [ fhir:v "FlightExample" ] ;
+       fhir:description [ fhir:v "An example of a flight itinerary." ] ;
        fhir:example [
-         fhir:v "http://example.org/StructureDefinition/FlightItinerary1"^^xsd:anyURI ;
-         fhir:link <http://example.org/StructureDefinition/FlightItinerary1>
+         fhir:v "http://example.org/StructureDefinition/FlightItinerary"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/FlightItinerary>
        ]
      ] [
        fhir:extension ( [
@@ -628,22 +628,10 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/StructureDefinition/FlightItinerary1> ;
-         fhir:reference [ fhir:v "StructureDefinition/FlightItinerary1" ]
+         fhir:link <http://example.org/StructureDefinition/FlightItinerary> ;
+         fhir:reference [ fhir:v "StructureDefinition/FlightItinerary" ]
        ] ;
-       fhir:name [ fhir:v "FlightItinerary1" ] ;
-       fhir:description [ fhir:v "Flight info for an ill traveler" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://example.org/StructureDefinition/FlightItinerary2> ;
-         fhir:reference [ fhir:v "StructureDefinition/FlightItinerary2" ]
-       ] ;
-       fhir:name [ fhir:v "FlightItinerary2" ] ;
+       fhir:name [ fhir:v "FlightItinerary" ] ;
        fhir:description [ fhir:v "Flight information for an ill traveler" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
@@ -765,6 +753,18 @@
        ] ;
        fhir:name [ fhir:v "Quarintine Stations VS" ] ;
        fhir:description [ fhir:v "A list of all US Quarantine Stations." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/rash-onset> ;
+         fhir:reference [ fhir:v "StructureDefinition/rash-onset" ]
+       ] ;
+       fhir:name [ fhir:v "Rash Onset Date" ] ;
+       fhir:description [ fhir:v "Date when rash appeared" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

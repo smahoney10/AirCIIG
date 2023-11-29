@@ -20,6 +20,7 @@
     <sch:title>f:Condition/f:evidence</sch:title>
     <sch:rule context="f:Condition/f:evidence">
       <sch:assert test="count(f:extension[@url = 'http://example.org/StructureDefinition/chest-xray']) &lt;= 1">extension with URL = 'http://example.org/StructureDefinition/chest-xray': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://example.org/StructureDefinition/rash-onset']) &lt;= 1">extension with URL = 'http://example.org/StructureDefinition/rash-onset': maximum cardinality of 'extension' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
 </sch:schema>

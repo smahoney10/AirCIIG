@@ -11,7 +11,7 @@
   <name value="CDCDGMQReportofIllTraveler"/>
   <title value="CDC DGMQ Report of Ill Traveler"/>
   <status value="draft"/>
-  <date value="2023-11-28T09:30:35-05:00"/>
+  <date value="2023-11-28T21:37:28-05:00"/>
   <publisher value="HL7 Public Health Working Group"/>
   <contact>
     <name value="HL7 Public Health Working Group"/>
@@ -534,31 +534,20 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/FlightExample1"/>
+        <reference value="Observation/FlightExample"/>
       </reference>
-      <name value="FlightExample1"/>
-      <description value="An example of a flight info."/>
-      <exampleCanonical value="http://example.org/StructureDefinition/FlightItinerary1"/>
+      <name value="FlightExample"/>
+      <description value="An example of a flight itinerary."/>
+      <exampleCanonical value="http://example.org/StructureDefinition/FlightItinerary"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/FlightItinerary1"/>
+        <reference value="StructureDefinition/FlightItinerary"/>
       </reference>
-      <name value="FlightItinerary1"/>
-      <description value="Flight info for an ill traveler"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/FlightItinerary2"/>
-      </reference>
-      <name value="FlightItinerary2"/>
+      <name value="FlightItinerary"/>
       <description value="Flight information for an ill traveler"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -670,6 +659,17 @@
       </reference>
       <name value="Quarintine Stations VS"/>
       <description value="A list of all US Quarantine Stations."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rash-onset"/>
+      </reference>
+      <name value="Rash Onset Date"/>
+      <description value="Date when rash appeared"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

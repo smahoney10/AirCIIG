@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "6412a161-6638-4a7d-b387-329e593e5d23-161",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/6412a161-6638-4a7d-b387-329e593e5d23-161",
+  "id" : "0d17484c-5e62-4f4c-b114-05e19e010a1e-95",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/0d17484c-5e62-4f4c-b114-05e19e010a1e-95",
   "name" : "UnionUSCoreConditionProblemsHealthConcernsProfileAndInfectiousDisease",
   "title" : "Union of US Core Condition Problems and Health Concerns Profile And null",
   "status" : "active",
-  "date" : "2023-11-28T09:30:42-05:00",
+  "date" : "2023-11-28T21:37:35-05:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -659,7 +659,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "left: Valueset to describe the actual problem experienced by the patient; right: Identification of the condition or diagnosis.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/6412a161-6638-4a7d-b387-329e593e5d23-158"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/0d17484c-5e62-4f4c-b114-05e19e010a1e-92"
       },
       "mapping" : [{
         "identity" : "workflow",

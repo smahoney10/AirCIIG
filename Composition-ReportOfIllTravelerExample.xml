@@ -22,4 +22,9 @@
     <reference value="Organization/StateExample"/>
   </author>
   <title value="Report of Ill Traveler"/>
+  <section>
+    <entry>
+      <reference value="Condition/TuberculosisExample"/>
+    </entry>
+  </section>
 </Composition>

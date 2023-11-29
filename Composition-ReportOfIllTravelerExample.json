@@ -21,5 +21,10 @@
   "author" : [{
     "reference" : "Organization/StateExample"
   }],
-  "title" : "Report of Ill Traveler"
+  "title" : "Report of Ill Traveler",
+  "section" : [{
+    "entry" : [{
+      "reference" : "Condition/TuberculosisExample"
+    }]
+  }]
 }
