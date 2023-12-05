@@ -3,14 +3,14 @@
   "id" : "AirportCodeVS",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-airport-code-system.html\"><code>http://example.org/CodeSystem/airport-code-system</code></a></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-airport-code-system.html\"><code>http://hl7.org/fhir/us/reportofilltraveler/CodeSystem/airport-code-system</code></a></li></ul></div>"
   },
-  "url" : "http://example.org/ValueSet/AirportCodeVS",
+  "url" : "http://hl7.org/fhir/us/reportofilltraveler/ValueSet/AirportCodeVS",
   "version" : "0.1.0",
   "name" : "AirportCodeVS",
   "title" : "Airport Codes VS",
   "status" : "draft",
-  "date" : "2023-11-28T21:37:28-05:00",
+  "date" : "2023-12-05T13:08:56-05:00",
   "publisher" : "HL7 Public Health Working Group",
   "contact" : [{
     "name" : "HL7 Public Health Working Group",
@@ -26,7 +26,7 @@
   "description" : "A list of USA Airport Codes.",
   "compose" : {
     "include" : [{
-      "system" : "http://example.org/CodeSystem/airport-code-system"
+      "system" : "http://hl7.org/fhir/us/reportofilltraveler/CodeSystem/airport-code-system"
     }]
   }
 }

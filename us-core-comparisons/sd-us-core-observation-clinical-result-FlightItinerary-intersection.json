@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "0d17484c-5e62-4f4c-b114-05e19e010a1e-39",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/0d17484c-5e62-4f4c-b114-05e19e010a1e-39",
+  "id" : "3615e911-f5f6-4bee-b96d-ba4b03decb78-39",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/3615e911-f5f6-4bee-b96d-ba4b03decb78-39",
   "name" : "IntersectionUSCoreObservationClinicalResultProfileAndFlightItinerary",
   "title" : "Intersection of US Core Observation Clinical Result Profile And null",
   "status" : "active",
-  "date" : "2023-11-28T21:37:35-05:00",
+  "date" : "2023-12-05T13:09:03-05:00",
   "snapshot" : {
     "element" : [{
       "path" : "Observation",

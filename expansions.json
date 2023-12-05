@@ -1,27 +1,27 @@
 {
   "resourceType" : "Bundle",
-  "id" : "d8e39509-972c-4a14-9c40-d14b4367cecf",
+  "id" : "756398b2-10ed-4196-8145-7a21cf1252a6",
   "meta" : {
-    "lastUpdated" : "2023-11-28T21:37:28.963-05:00"
+    "lastUpdated" : "2023-12-05T13:08:56.959-05:00"
   },
   "type" : "collection",
   "entry" : [{
-    "fullUrl" : "http://example.org/ValueSet/AirportCodeVS",
+    "fullUrl" : "http://hl7.org/fhir/us/reportofilltraveler/ValueSet/AirportCodeVS",
     "resource" : {
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-airport-code-system.html\">codesystem Airport Codes v0.1.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.org-CodeSystem-airport-code-system-ABR\"> </a>\u00a0\u00a0<a href=\"CodeSystem-airport-code-system.html#airport-code-system-ABR\">ABR</a></td><td>http://example.org/CodeSystem/airport-code-system</td><td>Aberdeen, SD</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.org-CodeSystem-airport-code-system-ALB\"> </a>\u00a0\u00a0<a href=\"CodeSystem-airport-code-system.html#airport-code-system-ALB\">ALB</a></td><td>http://example.org/CodeSystem/airport-code-system</td><td>Albany, NY</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.org-CodeSystem-airport-code-system-LAX\"> </a>\u00a0\u00a0<a href=\"CodeSystem-airport-code-system.html#airport-code-system-LAX\">LAX</a></td><td>http://example.org/CodeSystem/airport-code-system</td><td>Los Angeles, CA</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.org-CodeSystem-airport-code-system-DCA\"> </a>\u00a0\u00a0<a href=\"CodeSystem-airport-code-system.html#airport-code-system-DCA\">DCA</a></td><td>http://example.org/CodeSystem/airport-code-system</td><td>Washington, DC</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-airport-code-system.html\">codesystem Airport Codes v0.1.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-reportofilltraveler-CodeSystem-airport-code-system-ABR\"> </a>\u00a0\u00a0<a href=\"CodeSystem-airport-code-system.html#airport-code-system-ABR\">ABR</a></td><td>http://hl7.org/fhir/us/reportofilltraveler/CodeSystem/airport-code-system</td><td>Aberdeen, SD</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-reportofilltraveler-CodeSystem-airport-code-system-ALB\"> </a>\u00a0\u00a0<a href=\"CodeSystem-airport-code-system.html#airport-code-system-ALB\">ALB</a></td><td>http://hl7.org/fhir/us/reportofilltraveler/CodeSystem/airport-code-system</td><td>Albany, NY</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-reportofilltraveler-CodeSystem-airport-code-system-LAX\"> </a>\u00a0\u00a0<a href=\"CodeSystem-airport-code-system.html#airport-code-system-LAX\">LAX</a></td><td>http://hl7.org/fhir/us/reportofilltraveler/CodeSystem/airport-code-system</td><td>Los Angeles, CA</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-reportofilltraveler-CodeSystem-airport-code-system-DCA\"> </a>\u00a0\u00a0<a href=\"CodeSystem-airport-code-system.html#airport-code-system-DCA\">DCA</a></td><td>http://hl7.org/fhir/us/reportofilltraveler/CodeSystem/airport-code-system</td><td>Washington, DC</td></tr></table></div>"
       },
-      "url" : "http://example.org/ValueSet/AirportCodeVS",
+      "url" : "http://hl7.org/fhir/us/reportofilltraveler/ValueSet/AirportCodeVS",
       "version" : "0.1.0",
       "name" : "AirportCodeVS",
       "title" : "Airport Codes VS",
       "status" : "draft",
-      "date" : "2023-11-28T21:37:28-05:00",
+      "date" : "2023-12-05T13:08:56-05:00",
       "expansion" : {
-        "identifier" : "urn:uuid:fda144c0-bc1a-45b6-96f7-d82cec44736e",
-        "timestamp" : "2023-11-28T21:38:52-05:00",
+        "identifier" : "urn:uuid:e8cd5ef3-1f61-49dd-a01d-7e362369c548",
+        "timestamp" : "2023-12-05T13:10:34-05:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -29,25 +29,25 @@
         },
         {
           "name" : "used-codesystem",
-          "valueUri" : "http://example.org/CodeSystem/airport-code-system|0.1.0"
+          "valueUri" : "http://hl7.org/fhir/us/reportofilltraveler/CodeSystem/airport-code-system|0.1.0"
         }],
         "contains" : [{
-          "system" : "http://example.org/CodeSystem/airport-code-system",
+          "system" : "http://hl7.org/fhir/us/reportofilltraveler/CodeSystem/airport-code-system",
           "code" : "ABR",
           "display" : "Aberdeen, SD"
         },
         {
-          "system" : "http://example.org/CodeSystem/airport-code-system",
+          "system" : "http://hl7.org/fhir/us/reportofilltraveler/CodeSystem/airport-code-system",
           "code" : "ALB",
           "display" : "Albany, NY"
         },
         {
-          "system" : "http://example.org/CodeSystem/airport-code-system",
+          "system" : "http://hl7.org/fhir/us/reportofilltraveler/CodeSystem/airport-code-system",
           "code" : "LAX",
           "display" : "Los Angeles, CA"
         },
         {
-          "system" : "http://example.org/CodeSystem/airport-code-system",
+          "system" : "http://hl7.org/fhir/us/reportofilltraveler/CodeSystem/airport-code-system",
           "code" : "DCA",
           "display" : "Washington, DC"
         }]
@@ -55,22 +55,22 @@
     }
   },
   {
-    "fullUrl" : "http://example.org/ValueSet/InfectiousDiseaseNameVS",
+    "fullUrl" : "http://hl7.org/fhir/us/reportofilltraveler/ValueSet/InfectiousDiseaseNameVS",
     "resource" : {
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-infectious-disease-system.html\">codesystem Infectious Disease v0.1.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.org-CodeSystem-infectious-disease-system-TB\"> </a>\u00a0\u00a0<a href=\"CodeSystem-infectious-disease-system.html#infectious-disease-system-TB\">TB</a></td><td>http://example.org/CodeSystem/infectious-disease-system</td><td>Tuberculosis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.org-CodeSystem-infectious-disease-system-ME\"> </a>\u00a0\u00a0<a href=\"CodeSystem-infectious-disease-system.html#infectious-disease-system-ME\">ME</a></td><td>http://example.org/CodeSystem/infectious-disease-system</td><td>Measles</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-infectious-disease-system.html\">codesystem Infectious Disease v0.1.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-reportofilltraveler-CodeSystem-infectious-disease-system-TB\"> </a>\u00a0\u00a0<a href=\"CodeSystem-infectious-disease-system.html#infectious-disease-system-TB\">TB</a></td><td>http://hl7.org/fhir/us/reportofilltraveler/CodeSystem/infectious-disease-system</td><td>Tuberculosis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-reportofilltraveler-CodeSystem-infectious-disease-system-ME\"> </a>\u00a0\u00a0<a href=\"CodeSystem-infectious-disease-system.html#infectious-disease-system-ME\">ME</a></td><td>http://hl7.org/fhir/us/reportofilltraveler/CodeSystem/infectious-disease-system</td><td>Measles</td></tr></table></div>"
       },
-      "url" : "http://example.org/ValueSet/InfectiousDiseaseNameVS",
+      "url" : "http://hl7.org/fhir/us/reportofilltraveler/ValueSet/InfectiousDiseaseNameVS",
       "version" : "0.1.0",
       "name" : "InfectiousDiseaseNameVS",
       "title" : "Infectious Disease VS",
       "status" : "draft",
-      "date" : "2023-11-28T21:37:28-05:00",
+      "date" : "2023-12-05T13:08:56-05:00",
       "expansion" : {
-        "identifier" : "urn:uuid:ae956d90-3a35-46e3-959e-5c13dc59795b",
-        "timestamp" : "2023-11-28T21:38:53-05:00",
+        "identifier" : "urn:uuid:58576413-10d7-4fb3-8dcd-45223b96f3a6",
+        "timestamp" : "2023-12-05T13:10:34-05:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -78,15 +78,15 @@
         },
         {
           "name" : "used-codesystem",
-          "valueUri" : "http://example.org/CodeSystem/infectious-disease-system|0.1.0"
+          "valueUri" : "http://hl7.org/fhir/us/reportofilltraveler/CodeSystem/infectious-disease-system|0.1.0"
         }],
         "contains" : [{
-          "system" : "http://example.org/CodeSystem/infectious-disease-system",
+          "system" : "http://hl7.org/fhir/us/reportofilltraveler/CodeSystem/infectious-disease-system",
           "code" : "TB",
           "display" : "Tuberculosis"
         },
         {
-          "system" : "http://example.org/CodeSystem/infectious-disease-system",
+          "system" : "http://hl7.org/fhir/us/reportofilltraveler/CodeSystem/infectious-disease-system",
           "code" : "ME",
           "display" : "Measles"
         }]
@@ -94,23 +94,23 @@
     }
   },
   {
-    "fullUrl" : "http://example.org/ValueSet/InfectiousDiseaseVS",
+    "fullUrl" : "http://hl7.org/fhir/us/reportofilltraveler/ValueSet/InfectiousDiseaseVS",
     "resource" : {
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
         "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li>SNOMED CT International edition 01-Sep 2023</li><li>SNOMED CT International edition 01-Sep 2023</li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-56717001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/56717001\">56717001</a></td><td>http://snomed.info/sct</td><td>Tuberculosis</td></tr></table></div>"
       },
-      "url" : "http://example.org/ValueSet/InfectiousDiseaseVS",
+      "url" : "http://hl7.org/fhir/us/reportofilltraveler/ValueSet/InfectiousDiseaseVS",
       "version" : "0.1.0",
       "name" : "InfectiousDiseaseVS",
       "title" : "Infectious Disease VS",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2023-11-28T21:37:28-05:00",
+      "date" : "2023-12-05T13:08:56-05:00",
       "expansion" : {
-        "identifier" : "urn:uuid:6f8b5a7f-70de-48fe-82a2-f21ff61334a7",
-        "timestamp" : "2023-11-28T21:38:53-05:00",
+        "identifier" : "urn:uuid:4dfb781c-c047-4fe8-8d37-8e64fd15417d",
+        "timestamp" : "2023-12-05T13:10:34-05:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -141,22 +141,22 @@
     }
   },
   {
-    "fullUrl" : "http://example.org/ValueSet/QstationsVS",
+    "fullUrl" : "http://hl7.org/fhir/us/reportofilltraveler/ValueSet/QstationsVS",
     "resource" : {
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-quarantine-station-system.html\">codesystem Quarantine Stations v0.1.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.org-CodeSystem-quarantine-station-system-LAX\"> </a>\u00a0\u00a0<a href=\"CodeSystem-quarantine-station-system.html#quarantine-station-system-LAX\">LAX</a></td><td>http://example.org/CodeSystem/quarantine-station-system</td><td>Los Angeles, CA</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.org-CodeSystem-quarantine-station-system-MIA\"> </a>\u00a0\u00a0<a href=\"CodeSystem-quarantine-station-system.html#quarantine-station-system-MIA\">MIA</a></td><td>http://example.org/CodeSystem/quarantine-station-system</td><td>Miami, FL</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-quarantine-station-system.html\">codesystem Quarantine Stations v0.1.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-reportofilltraveler-CodeSystem-quarantine-station-system-LAX\"> </a>\u00a0\u00a0<a href=\"CodeSystem-quarantine-station-system.html#quarantine-station-system-LAX\">LAX</a></td><td>http://hl7.org/fhir/us/reportofilltraveler/CodeSystem/quarantine-station-system</td><td>Los Angeles, CA</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-reportofilltraveler-CodeSystem-quarantine-station-system-MIA\"> </a>\u00a0\u00a0<a href=\"CodeSystem-quarantine-station-system.html#quarantine-station-system-MIA\">MIA</a></td><td>http://hl7.org/fhir/us/reportofilltraveler/CodeSystem/quarantine-station-system</td><td>Miami, FL</td></tr></table></div>"
       },
-      "url" : "http://example.org/ValueSet/QstationsVS",
+      "url" : "http://hl7.org/fhir/us/reportofilltraveler/ValueSet/QstationsVS",
       "version" : "0.1.0",
       "name" : "QstationsVS",
       "title" : "Quarintine Stations VS",
       "status" : "draft",
-      "date" : "2023-11-28T21:37:28-05:00",
+      "date" : "2023-12-05T13:08:56-05:00",
       "expansion" : {
-        "identifier" : "urn:uuid:c39231df-afed-4616-91b2-2fbf31926dbc",
-        "timestamp" : "2023-11-28T21:38:53-05:00",
+        "identifier" : "urn:uuid:9bab82cc-4939-4be3-801a-3665b684d49a",
+        "timestamp" : "2023-12-05T13:10:35-05:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -164,15 +164,15 @@
         },
         {
           "name" : "used-codesystem",
-          "valueUri" : "http://example.org/CodeSystem/quarantine-station-system|0.1.0"
+          "valueUri" : "http://hl7.org/fhir/us/reportofilltraveler/CodeSystem/quarantine-station-system|0.1.0"
         }],
         "contains" : [{
-          "system" : "http://example.org/CodeSystem/quarantine-station-system",
+          "system" : "http://hl7.org/fhir/us/reportofilltraveler/CodeSystem/quarantine-station-system",
           "code" : "LAX",
           "display" : "Los Angeles, CA"
         },
         {
-          "system" : "http://example.org/CodeSystem/quarantine-station-system",
+          "system" : "http://hl7.org/fhir/us/reportofilltraveler/CodeSystem/quarantine-station-system",
           "code" : "MIA",
           "display" : "Miami, FL"
         }]

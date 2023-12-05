@@ -5,19 +5,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://example.org/ValueSet/InfectiousDiseaseNameVS> a fhir:ValueSet ;
+<http://hl7.org/fhir/us/reportofilltraveler/ValueSet/InfectiousDiseaseNameVS> a fhir:ValueSet ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "InfectiousDiseaseNameVS"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-infectious-disease-system.html\"><code>http://example.org/CodeSystem/infectious-disease-system</code></a></li></ul></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-infectious-disease-system.html\"><code>http://hl7.org/fhir/us/reportofilltraveler/CodeSystem/infectious-disease-system</code></a></li></ul></div>"
   ] ; # 
-  fhir:url [ fhir:v "http://example.org/ValueSet/InfectiousDiseaseNameVS"^^xsd:anyURI] ; # 
+  fhir:url [ fhir:v "http://hl7.org/fhir/us/reportofilltraveler/ValueSet/InfectiousDiseaseNameVS"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "InfectiousDiseaseNameVS"] ; # 
   fhir:title [ fhir:v "Infectious Disease VS"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-11-28T21:37:28-05:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-12-05T13:08:56-05:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Public Health Working Group"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Public Health Working Group" ] ;
@@ -32,7 +32,7 @@
   fhir:description [ fhir:v "A list of all Valid Tuberculosis Codes."] ; # 
   fhir:compose [
      fhir:include ( [
-       fhir:system [ fhir:v "http://example.org/CodeSystem/infectious-disease-system"^^xsd:anyURI ]
+       fhir:system [ fhir:v "http://hl7.org/fhir/us/reportofilltraveler/CodeSystem/infectious-disease-system"^^xsd:anyURI ]
      ] )
   ] . # 
 

@@ -3,14 +3,14 @@
   "id" : "airport-code-system",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This  code system <code>http://example.org/CodeSystem/airport-code-system</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">ABR<a name=\"airport-code-system-ABR\"> </a></td><td>Aberdeen, SD</td></tr><tr><td style=\"white-space:nowrap\">ALB<a name=\"airport-code-system-ALB\"> </a></td><td>Albany, NY</td></tr><tr><td style=\"white-space:nowrap\">LAX<a name=\"airport-code-system-LAX\"> </a></td><td>Los Angeles, CA</td></tr><tr><td style=\"white-space:nowrap\">DCA<a name=\"airport-code-system-DCA\"> </a></td><td>Washington, DC</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This  code system <code>http://hl7.org/fhir/us/reportofilltraveler/CodeSystem/airport-code-system</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">ABR<a name=\"airport-code-system-ABR\"> </a></td><td>Aberdeen, SD</td></tr><tr><td style=\"white-space:nowrap\">ALB<a name=\"airport-code-system-ALB\"> </a></td><td>Albany, NY</td></tr><tr><td style=\"white-space:nowrap\">LAX<a name=\"airport-code-system-LAX\"> </a></td><td>Los Angeles, CA</td></tr><tr><td style=\"white-space:nowrap\">DCA<a name=\"airport-code-system-DCA\"> </a></td><td>Washington, DC</td></tr></table></div>"
   },
-  "url" : "http://example.org/CodeSystem/airport-code-system",
+  "url" : "http://hl7.org/fhir/us/reportofilltraveler/CodeSystem/airport-code-system",
   "version" : "0.1.0",
   "name" : "AirportCodesCS",
   "title" : "Airport Codes",
   "status" : "draft",
-  "date" : "2023-11-28T21:37:28-05:00",
+  "date" : "2023-12-05T13:08:56-05:00",
   "publisher" : "HL7 Public Health Working Group",
   "contact" : [{
     "name" : "HL7 Public Health Working Group",

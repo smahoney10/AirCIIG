@@ -6,7 +6,7 @@
     <profile value="http://example.org/StructureDefinition/FlightItinerary"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="FlightExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;FlightExample&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-FlightItinerary.html">FlightItinerary</a></p></div><p><b>status</b>: preliminary</p><p><b>category</b>: transportation <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-ActClass.html">ActClass</a>#TRNS)</span></p><p><b>code</b>: 424483007 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#424483007)</span></p><p><b>value</b>: Airliner <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#261325004)</span></p><blockquote><p><b>component</b></p><p><b>code</b>: 8691-8 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#8691-8)</span></p><p><b>value</b>: History of Travel</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: DCA <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#DCA)</span></p><p><b>value</b>: DCA</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: LAX <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#LAX)</span></p><p><b>value</b>: LAX</p></blockquote></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="FlightExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;FlightExample&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-FlightItinerary.html">FlightItinerary</a></p></div><p><b>status</b>: preliminary</p><p><b>category</b>: transportation <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-ActClass.html">ActClass</a>#TRNS)</span></p><p><b>code</b>: 424483007 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#424483007)</span></p><p><b>value</b>: Airliner <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#261325004)</span></p></div>
   </text>
   <status value="preliminary"/>
   <category>
@@ -28,29 +28,4 @@
       <display value="Airliner"/>
     </coding>
   </valueCodeableConcept>
-  <component>
-    <code>
-      <coding>
-        <system value="http://loinc.org"/>
-        <code value="8691-8"/>
-      </coding>
-    </code>
-    <valueString value="History of Travel"/>
-  </component>
-  <component>
-    <code>
-      <coding>
-        <code value="DCA"/>
-      </coding>
-    </code>
-    <valueString value="DCA"/>
-  </component>
-  <component>
-    <code>
-      <coding>
-        <code value="LAX"/>
-      </coding>
-    </code>
-    <valueString value="LAX"/>
-  </component>
 </Observation>

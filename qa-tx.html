@@ -5,122 +5,54 @@
 <pre>
 Request: 
 
-POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+POST http://tx.fhir.org/r4/ValueSet/$expand?_limit=1000&_incomplete=true HTTP/1.0
 User-Agent: hapi-fhir-tooling-client
 Accept-Charset: UTF-8
 Accept: application/fhir+json
 Content-Type: application/fhir+json;charset=UTF-8
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://loinc.org","code":"8691-8"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"61bd6d9b-927a-451e-976a-5eb10a179309"},{"name":"profile","resource":{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}}]}
+{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"excludeNested","valueBoolean":false},{"name":"incomplete-ok","valueBoolean":true},{"name":"cache-id","valueId":"beafdf31-29d4-4df4-a9f9-a6aa4ffaf71c"},{"name":"valueSet","resource":{"resourceType":"ValueSet","id":"TuberculosisVS","text":{"status":"generated","div":"<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <code>https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.43/expansion</code></li></ul></div>"},"url":"http://hl7.org/fhir/us/reportofilltraveler/ValueSet/TuberculosisVS","version":"0.1.0","name":"TuberculosisVS","title":"Tuberculosis VS","status":"draft","date":"2023-12-05T13:08:56-05:00","publisher":"HL7 Public Health Working Group","contact":[{"name":"HL7 Public Health Working Group","telecom":[{"system":"url","value":"http://www.hl7.org/Special/committees/pher"},{"system":"email","value":"pafm@lists.HL7.org"}]}],"description":"A list of all Valid Tuberculosis Codes.","compose":{"include":[{"system":"https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.43/expansion"}]}}},{"name":"_limit","valueString":"1000"},{"name":"_incomplete","valueString":"true"}]}
 
 
 Response: 
 
-200
+422
 access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
 access-control-allow-origin:*
 access-control-expose-headers:Content-Location, Location
-cache-control:public, max-age=600
 connection:keep-alive
-content-length:226
+content-length:455
 content-type:application/fhir+json
-date:Wed, 29 Nov 2023 02:37:30 GMT
-last-modified:Wed, 29 Nov 2023 02:37:30 GMT
-pragma:no-cache
+date:Tue, 05 Dec 2023 18:10:36 GMT
 server:nginx
-x-request-id:44-2203513
+x-request-id:50-772303
 
-{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : true},{"name" : "system","valueUri" : "http://loinc.org"},{"name" : "code","valueCode" : "8691-8"},{"name" : "version","valueString" : "2.74"}]}
-
-</pre><hr/>
-<a name="l2"> </a><h3>2</h3>
-<pre>
-Request: 
-
-POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
-User-Agent: hapi-fhir-tooling-client
-Accept-Charset: UTF-8
-Accept: application/fhir+json
-Content-Type: application/fhir+json;charset=UTF-8
-
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://loinc.org","code":"8691-8"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"61bd6d9b-927a-451e-976a-5eb10a179309"},{"name":"profile","resource":{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}}]}
-
-
-Response: 
-
-200
-access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
-access-control-allow-origin:*
-access-control-expose-headers:Content-Location, Location
-cache-control:public, max-age=600
-connection:keep-alive
-content-length:283
-content-type:application/fhir+json
-date:Wed, 29 Nov 2023 02:37:41 GMT
-last-modified:Wed, 29 Nov 2023 02:37:41 GMT
-pragma:no-cache
-server:nginx
-x-request-id:44-2203538
-
-{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : true},{"name" : "system","valueUri" : "http://loinc.org"},{"name" : "code","valueCode" : "8691-8"},{"name" : "version","valueString" : "2.74"},{"name" : "display","valueString" : "History of Travel"}]}
+{"resourceType" : "OperationOutcome","text" : {"status" : "generated","div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Unable to provide support for code system https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.43/expansion</p></div>"},"issue" : [{"severity" : "error","code" : "not-supported","details" : {"text" : "Unable to provide support for code system https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.43/expansion"}}]}
 
 --- 1 -----------------
 Request: 
 
-POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+POST http://tx.fhir.org/r4/ValueSet/$expand?_limit=1000&_incomplete=true HTTP/1.0
 User-Agent: hapi-fhir-tooling-client
 Accept-Charset: UTF-8
 Accept: application/fhir+json
 Content-Type: application/fhir+json;charset=UTF-8
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://loinc.org","code":"8691-8"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"61bd6d9b-927a-451e-976a-5eb10a179309"},{"name":"profile","resource":{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}}]}
+{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"excludeNested","valueBoolean":false},{"name":"incomplete-ok","valueBoolean":true},{"name":"cache-id","valueId":"beafdf31-29d4-4df4-a9f9-a6aa4ffaf71c"},{"name":"valueSet","resource":{"resourceType":"ValueSet","id":"TuberculosisVS","text":{"status":"generated","div":"<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <code>https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.43/expansion</code></li></ul></div>"},"url":"http://hl7.org/fhir/us/reportofilltraveler/ValueSet/TuberculosisVS","version":"0.1.0","name":"TuberculosisVS","title":"Tuberculosis VS","status":"draft","date":"2023-12-05T13:08:56-05:00","publisher":"HL7 Public Health Working Group","contact":[{"name":"HL7 Public Health Working Group","telecom":[{"system":"url","value":"http://www.hl7.org/Special/committees/pher"},{"system":"email","value":"pafm@lists.HL7.org"}]}],"description":"A list of all Valid Tuberculosis Codes.","compose":{"include":[{"system":"https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.43/expansion"}]}}},{"name":"_limit","valueString":"1000"},{"name":"_incomplete","valueString":"true"}]}
 
 
 Response: 
 
-200
+422
 access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
 access-control-allow-origin:*
 access-control-expose-headers:Content-Location, Location
-cache-control:public, max-age=600
 connection:keep-alive
-content-length:226
+content-length:455
 content-type:application/fhir+json
-date:Wed, 29 Nov 2023 02:37:30 GMT
-last-modified:Wed, 29 Nov 2023 02:37:30 GMT
-pragma:no-cache
+date:Tue, 05 Dec 2023 18:10:36 GMT
 server:nginx
-x-request-id:44-2203513
+x-request-id:50-772303
 
-{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : true},{"name" : "system","valueUri" : "http://loinc.org"},{"name" : "code","valueCode" : "8691-8"},{"name" : "version","valueString" : "2.74"}]}
-
---- 2 -----------------
-Request: 
-
-POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
-User-Agent: hapi-fhir-tooling-client
-Accept-Charset: UTF-8
-Accept: application/fhir+json
-Content-Type: application/fhir+json;charset=UTF-8
-
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://loinc.org","code":"8691-8"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"61bd6d9b-927a-451e-976a-5eb10a179309"},{"name":"profile","resource":{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}}]}
-
-
-Response: 
-
-200
-access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
-access-control-allow-origin:*
-access-control-expose-headers:Content-Location, Location
-cache-control:public, max-age=600
-connection:keep-alive
-content-length:283
-content-type:application/fhir+json
-date:Wed, 29 Nov 2023 02:37:41 GMT
-last-modified:Wed, 29 Nov 2023 02:37:41 GMT
-pragma:no-cache
-server:nginx
-x-request-id:44-2203538
-
-{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : true},{"name" : "system","valueUri" : "http://loinc.org"},{"name" : "code","valueCode" : "8691-8"},{"name" : "version","valueString" : "2.74"},{"name" : "display","valueString" : "History of Travel"}]}
+{"resourceType" : "OperationOutcome","text" : {"status" : "generated","div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Unable to provide support for code system https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.43/expansion</p></div>"},"issue" : [{"severity" : "error","code" : "not-supported","details" : {"text" : "Unable to provide support for code system https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.43/expansion"}}]}
 </pre></head></html>

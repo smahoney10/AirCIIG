@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://example.org/DiagnosticReport/ChestXrayResultsExample> a fhir:DiagnosticReport ;
+<http://hl7.org/fhir/us/reportofilltraveler/DiagnosticReport/ChestXrayResultsExample> a fhir:DiagnosticReport ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "ChestXrayResultsExample"] ; # 
   fhir:meta [
@@ -30,13 +30,15 @@
      ] )
   ] ; # 
   fhir:subject [
-     fhir:link <http://example.org/Patient/travelerExample> ;
+     fhir:link <http://hl7.org/fhir/us/reportofilltraveler/Patient/travelerExample> ;
      fhir:reference [ fhir:v "Patient/travelerExample" ]
   ] ; # 
   fhir:effective [ fhir:v "2019-02-03T19:43:30.000Z"^^xsd:dateTime] ; # 
   fhir:presentedForm ( [
      fhir:id [ fhir:v "Pulmonary_Tuberculosis_X-ray3.jpg" ]
   ] ) . # 
+
+<http://hl7.org/fhir/us/reportofilltraveler/Patient/travelerExample> a fhir:us .
 
 # -------------------------------------------------------------------------------------
 

@@ -5,13 +5,13 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://example.org/Patient/travelerExample> a fhir:Patient ;
+<http://hl7.org/fhir/us/reportofilltraveler/Patient/travelerExample> a fhir:Patient ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "travelerExample"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "http://example.org/StructureDefinition/Traveler"^^xsd:anyURI ;
-       fhir:link <http://example.org/StructureDefinition/Traveler>
+       fhir:v "http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/Traveler"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/Traveler>
      ] )
   ] ; # 
   fhir:text [

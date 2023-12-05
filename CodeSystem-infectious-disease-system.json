@@ -3,14 +3,14 @@
   "id" : "infectious-disease-system",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This  code system <code>http://example.org/CodeSystem/infectious-disease-system</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">TB<a name=\"infectious-disease-system-TB\"> </a></td><td>Tuberculosis</td></tr><tr><td style=\"white-space:nowrap\">ME<a name=\"infectious-disease-system-ME\"> </a></td><td>Measles</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This  code system <code>http://hl7.org/fhir/us/reportofilltraveler/CodeSystem/infectious-disease-system</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">TB<a name=\"infectious-disease-system-TB\"> </a></td><td>Tuberculosis</td></tr><tr><td style=\"white-space:nowrap\">ME<a name=\"infectious-disease-system-ME\"> </a></td><td>Measles</td></tr></table></div>"
   },
-  "url" : "http://example.org/CodeSystem/infectious-disease-system",
+  "url" : "http://hl7.org/fhir/us/reportofilltraveler/CodeSystem/infectious-disease-system",
   "version" : "0.1.0",
   "name" : "InfectiousDiseaseNameCS",
   "title" : "Infectious Disease",
   "status" : "draft",
-  "date" : "2023-11-28T21:37:28-05:00",
+  "date" : "2023-12-05T13:08:56-05:00",
   "publisher" : "HL7 Public Health Working Group",
   "contact" : [{
     "name" : "HL7 Public Health Working Group",

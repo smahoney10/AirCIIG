@@ -5,19 +5,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://example.org/ImplementationGuide/hl7.fhir.us.illTraveler> a fhir:ImplementationGuide ;
+<http://hl7.org/fhir/us/reportofilltraveler/ImplementationGuide/hl7.fhir.us.illTraveler> a fhir:ImplementationGuide ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "hl7.fhir.us.illTraveler"] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CDCDGMQReportofIllTraveler</h2><p>The official URL for this implementation guide is: </p><pre>http://example.org/ImplementationGuide/hl7.fhir.us.illTraveler</pre><div><p>Implementation Guide CDC DGMQ Report of Ill Traveler</p>\n</div></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CDCDGMQReportofIllTraveler</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/us/reportofilltraveler/ImplementationGuide/hl7.fhir.us.illTraveler</pre><div><p>Implementation Guide CDC DGMQ Report of Ill Traveler</p>\n</div></div>"
   ] ; # 
-  fhir:url [ fhir:v "http://example.org/ImplementationGuide/hl7.fhir.us.illTraveler"^^xsd:anyURI] ; # 
+  fhir:url [ fhir:v "http://hl7.org/fhir/us/reportofilltraveler/ImplementationGuide/hl7.fhir.us.illTraveler"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "CDCDGMQReportofIllTraveler"] ; # 
   fhir:title [ fhir:v "CDC DGMQ Report of Ill Traveler"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-11-28T21:37:28-05:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-12-05T13:08:56-05:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Public Health Working Group"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Public Health Working Group" ] ;
@@ -105,6 +105,15 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-history" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "http://hl7.org/fhir/us/reportofilltraveler/history.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "autoload-resources" ]
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
@@ -163,15 +172,6 @@
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "input/ignoreWarnings.txt" ]
-       ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "path-history" ]
-       ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "http://example.org/history.html" ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] [
@@ -342,6 +342,15 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-history" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "http://hl7.org/fhir/us/reportofilltraveler/history.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "autoload-resources" ]
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
@@ -400,15 +409,6 @@
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "input/ignoreWarnings.txt" ]
-       ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "path-history" ]
-       ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "http://example.org/history.html" ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] [
@@ -553,7 +553,7 @@
          fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/CodeSystem/airport-code-system> ;
+         fhir:link <http://hl7.org/fhir/us/reportofilltraveler/CodeSystem/airport-code-system> ;
          fhir:reference [ fhir:v "CodeSystem/airport-code-system" ]
        ] ;
        fhir:name [ fhir:v "Airport Codes" ] ;
@@ -565,7 +565,7 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/ValueSet/AirportCodeVS> ;
+         fhir:link <http://hl7.org/fhir/us/reportofilltraveler/ValueSet/AirportCodeVS> ;
          fhir:reference [ fhir:v "ValueSet/AirportCodeVS" ]
        ] ;
        fhir:name [ fhir:v "Airport Codes VS" ] ;
@@ -577,7 +577,7 @@
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/StructureDefinition/chest-xray> ;
+         fhir:link <http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/chest-xray> ;
          fhir:reference [ fhir:v "StructureDefinition/chest-xray" ]
        ] ;
        fhir:name [ fhir:v "Chest X-ray" ] ;
@@ -589,7 +589,7 @@
          fhir:value [ fhir:v "DiagnosticReport" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/DiagnosticReport/ChestXrayResultsExample> ;
+         fhir:link <http://hl7.org/fhir/us/reportofilltraveler/DiagnosticReport/ChestXrayResultsExample> ;
          fhir:reference [ fhir:v "DiagnosticReport/ChestXrayResultsExample" ]
        ] ;
        fhir:name [ fhir:v "ChestXrayResultsExample" ] ;
@@ -601,34 +601,19 @@
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/StructureDefinition/flight-duration> ;
-         fhir:reference [ fhir:v "StructureDefinition/flight-duration" ]
+         fhir:link <http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/flight-details> ;
+         fhir:reference [ fhir:v "StructureDefinition/flight-details" ]
        ] ;
-       fhir:name [ fhir:v "Duration of the flight" ] ;
-       fhir:description [ fhir:v "Length of time on the airplane from gate to gate" ] ;
+       fhir:name [ fhir:v "Flight Details" ] ;
+       fhir:description [ fhir:v "Flight Details provides details about a single flight that the ill traveler was a passenger on. \r\nIt does not cover each leg of an itinerary. Each leg requires a flightDetail" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Observation" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://example.org/Observation/FlightExample> ;
-         fhir:reference [ fhir:v "Observation/FlightExample" ]
-       ] ;
-       fhir:name [ fhir:v "FlightExample" ] ;
-       fhir:description [ fhir:v "An example of a flight itinerary." ] ;
-       fhir:example [
-         fhir:v "http://example.org/StructureDefinition/FlightItinerary"^^xsd:anyURI ;
-         fhir:link <http://example.org/StructureDefinition/FlightItinerary>
-       ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/StructureDefinition/FlightItinerary> ;
+         fhir:link <http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/FlightItinerary> ;
          fhir:reference [ fhir:v "StructureDefinition/FlightItinerary" ]
        ] ;
        fhir:name [ fhir:v "FlightItinerary" ] ;
@@ -640,7 +625,7 @@
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/StructureDefinition/transfer-date> ;
+         fhir:link <http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/transfer-date> ;
          fhir:reference [ fhir:v "StructureDefinition/transfer-date" ]
        ] ;
        fhir:name [ fhir:v "Ill traveler transfer date" ] ;
@@ -652,7 +637,7 @@
          fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/CodeSystem/infectious-disease-system> ;
+         fhir:link <http://hl7.org/fhir/us/reportofilltraveler/CodeSystem/infectious-disease-system> ;
          fhir:reference [ fhir:v "CodeSystem/infectious-disease-system" ]
        ] ;
        fhir:name [ fhir:v "Infectious Disease" ] ;
@@ -664,7 +649,7 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/ValueSet/InfectiousDiseaseNameVS> ;
+         fhir:link <http://hl7.org/fhir/us/reportofilltraveler/ValueSet/InfectiousDiseaseNameVS> ;
          fhir:reference [ fhir:v "ValueSet/InfectiousDiseaseNameVS" ]
        ] ;
        fhir:name [ fhir:v "Infectious Disease VS" ] ;
@@ -676,7 +661,7 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/ValueSet/InfectiousDiseaseVS> ;
+         fhir:link <http://hl7.org/fhir/us/reportofilltraveler/ValueSet/InfectiousDiseaseVS> ;
          fhir:reference [ fhir:v "ValueSet/InfectiousDiseaseVS" ]
        ] ;
        fhir:name [ fhir:v "Infectious Disease VS" ] ;
@@ -688,7 +673,7 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/StructureDefinition/InfectiousDisease> ;
+         fhir:link <http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/InfectiousDisease> ;
          fhir:reference [ fhir:v "StructureDefinition/InfectiousDisease" ]
        ] ;
        fhir:name [ fhir:v "InfectiousDisease" ] ;
@@ -700,7 +685,7 @@
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/StructureDefinition/lab-results> ;
+         fhir:link <http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/lab-results> ;
          fhir:reference [ fhir:v "StructureDefinition/lab-results" ]
        ] ;
        fhir:name [ fhir:v "Lab Results" ] ;
@@ -709,10 +694,25 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.org/fhir/us/reportofilltraveler/Observation/MultipleLegFlightExample> ;
+         fhir:reference [ fhir:v "Observation/MultipleLegFlightExample" ]
+       ] ;
+       fhir:name [ fhir:v "MultipleLegFlightExample" ] ;
+       fhir:description [ fhir:v "An example of a flight itinerary with multiple flights." ] ;
+       fhir:example [
+         fhir:v "http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/FlightItinerary"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/FlightItinerary>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/StructureDefinition/disease-name> ;
+         fhir:link <http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/disease-name> ;
          fhir:reference [ fhir:v "StructureDefinition/disease-name" ]
        ] ;
        fhir:name [ fhir:v "Name of Disease" ] ;
@@ -724,7 +724,7 @@
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/StructureDefinition/qstation-name> ;
+         fhir:link <http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/qstation-name> ;
          fhir:reference [ fhir:v "StructureDefinition/qstation-name" ]
        ] ;
        fhir:name [ fhir:v "Q-station Name" ] ;
@@ -736,7 +736,7 @@
          fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/CodeSystem/quarantine-station-system> ;
+         fhir:link <http://hl7.org/fhir/us/reportofilltraveler/CodeSystem/quarantine-station-system> ;
          fhir:reference [ fhir:v "CodeSystem/quarantine-station-system" ]
        ] ;
        fhir:name [ fhir:v "Quarantine Stations" ] ;
@@ -748,7 +748,7 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/ValueSet/QstationsVS> ;
+         fhir:link <http://hl7.org/fhir/us/reportofilltraveler/ValueSet/QstationsVS> ;
          fhir:reference [ fhir:v "ValueSet/QstationsVS" ]
        ] ;
        fhir:name [ fhir:v "Quarintine Stations VS" ] ;
@@ -760,7 +760,7 @@
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/StructureDefinition/rash-onset> ;
+         fhir:link <http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/rash-onset> ;
          fhir:reference [ fhir:v "StructureDefinition/rash-onset" ]
        ] ;
        fhir:name [ fhir:v "Rash Onset Date" ] ;
@@ -772,14 +772,14 @@
          fhir:value [ fhir:v "Composition" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/Composition/ReportOfIllTravelerExample> ;
+         fhir:link <http://hl7.org/fhir/us/reportofilltraveler/Composition/ReportOfIllTravelerExample> ;
          fhir:reference [ fhir:v "Composition/ReportOfIllTravelerExample" ]
        ] ;
        fhir:name [ fhir:v "Report of Ill Traveler" ] ;
        fhir:description [ fhir:v "An example of a report of an ill traveler." ] ;
        fhir:example [
-         fhir:v "http://example.org/StructureDefinition/ReportOfIllTraveler"^^xsd:anyURI ;
-         fhir:link <http://example.org/StructureDefinition/ReportOfIllTraveler>
+         fhir:v "http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/ReportOfIllTraveler"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/ReportOfIllTraveler>
        ]
      ] [
        fhir:extension ( [
@@ -787,7 +787,7 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/StructureDefinition/ReportOfIllTraveler> ;
+         fhir:link <http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/ReportOfIllTraveler> ;
          fhir:reference [ fhir:v "StructureDefinition/ReportOfIllTraveler" ]
        ] ;
        fhir:name [ fhir:v "ReportOfIllTraveler" ] ;
@@ -796,10 +796,25 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.org/fhir/us/reportofilltraveler/Observation/SingleLegFlightExample> ;
+         fhir:reference [ fhir:v "Observation/SingleLegFlightExample" ]
+       ] ;
+       fhir:name [ fhir:v "SingleLegFlightExample" ] ;
+       fhir:description [ fhir:v "An example of a flight itinerary with only one flight." ] ;
+       fhir:example [
+         fhir:v "http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/FlightItinerary"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/FlightItinerary>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Organization" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/Organization/StateExample> ;
+         fhir:link <http://hl7.org/fhir/us/reportofilltraveler/Organization/StateExample> ;
          fhir:reference [ fhir:v "Organization/StateExample" ]
        ] ;
        fhir:name [ fhir:v "StateExample" ] ;
@@ -811,7 +826,7 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/StructureDefinition/Traveler> ;
+         fhir:link <http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/Traveler> ;
          fhir:reference [ fhir:v "StructureDefinition/Traveler" ]
        ] ;
        fhir:name [ fhir:v "Traveler" ] ;
@@ -823,14 +838,14 @@
          fhir:value [ fhir:v "Patient" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/Patient/travelerExample> ;
+         fhir:link <http://hl7.org/fhir/us/reportofilltraveler/Patient/travelerExample> ;
          fhir:reference [ fhir:v "Patient/travelerExample" ]
        ] ;
        fhir:name [ fhir:v "travelerExample" ] ;
        fhir:description [ fhir:v "An example of a patient with a license to krill." ] ;
        fhir:example [
-         fhir:v "http://example.org/StructureDefinition/Traveler"^^xsd:anyURI ;
-         fhir:link <http://example.org/StructureDefinition/Traveler>
+         fhir:v "http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/Traveler"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/Traveler>
        ]
      ] [
        fhir:extension ( [
@@ -838,7 +853,7 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/ValueSet/TuberculosisVS> ;
+         fhir:link <http://hl7.org/fhir/us/reportofilltraveler/ValueSet/TuberculosisVS> ;
          fhir:reference [ fhir:v "ValueSet/TuberculosisVS" ]
        ] ;
        fhir:name [ fhir:v "Tuberculosis VS" ] ;
@@ -850,14 +865,14 @@
          fhir:value [ fhir:v "Condition" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/Condition/TuberculosisExample> ;
+         fhir:link <http://hl7.org/fhir/us/reportofilltraveler/Condition/TuberculosisExample> ;
          fhir:reference [ fhir:v "Condition/TuberculosisExample" ]
        ] ;
        fhir:name [ fhir:v "TuberculosisExample" ] ;
        fhir:description [ fhir:v "An example of Tuberculosis." ] ;
        fhir:example [
-         fhir:v "http://example.org/StructureDefinition/InfectiousDisease"^^xsd:anyURI ;
-         fhir:link <http://example.org/StructureDefinition/InfectiousDisease>
+         fhir:v "http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/InfectiousDisease"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/InfectiousDisease>
        ]
      ] ) ;
      fhir:page [
@@ -1029,6 +1044,58 @@
        fhir:value [ fhir:v "input-cache/txcache" ]
      ] )
   ] . # 
+
+<http://hl7.org/fhir/us/reportofilltraveler/CodeSystem/airport-code-system> a fhir:us .
+
+<http://hl7.org/fhir/us/reportofilltraveler/ValueSet/AirportCodeVS> a fhir:us .
+
+<http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/chest-xray> a fhir:us .
+
+<http://hl7.org/fhir/us/reportofilltraveler/DiagnosticReport/ChestXrayResultsExample> a fhir:us .
+
+<http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/flight-details> a fhir:us .
+
+<http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/FlightItinerary> a fhir:us .
+
+<http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/transfer-date> a fhir:us .
+
+<http://hl7.org/fhir/us/reportofilltraveler/CodeSystem/infectious-disease-system> a fhir:us .
+
+<http://hl7.org/fhir/us/reportofilltraveler/ValueSet/InfectiousDiseaseNameVS> a fhir:us .
+
+<http://hl7.org/fhir/us/reportofilltraveler/ValueSet/InfectiousDiseaseVS> a fhir:us .
+
+<http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/InfectiousDisease> a fhir:us .
+
+<http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/lab-results> a fhir:us .
+
+<http://hl7.org/fhir/us/reportofilltraveler/Observation/MultipleLegFlightExample> a fhir:us .
+
+<http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/disease-name> a fhir:us .
+
+<http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/qstation-name> a fhir:us .
+
+<http://hl7.org/fhir/us/reportofilltraveler/CodeSystem/quarantine-station-system> a fhir:us .
+
+<http://hl7.org/fhir/us/reportofilltraveler/ValueSet/QstationsVS> a fhir:us .
+
+<http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/rash-onset> a fhir:us .
+
+<http://hl7.org/fhir/us/reportofilltraveler/Composition/ReportOfIllTravelerExample> a fhir:us .
+
+<http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/ReportOfIllTraveler> a fhir:us .
+
+<http://hl7.org/fhir/us/reportofilltraveler/Observation/SingleLegFlightExample> a fhir:us .
+
+<http://hl7.org/fhir/us/reportofilltraveler/Organization/StateExample> a fhir:us .
+
+<http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/Traveler> a fhir:us .
+
+<http://hl7.org/fhir/us/reportofilltraveler/Patient/travelerExample> a fhir:us .
+
+<http://hl7.org/fhir/us/reportofilltraveler/ValueSet/TuberculosisVS> a fhir:us .
+
+<http://hl7.org/fhir/us/reportofilltraveler/Condition/TuberculosisExample> a fhir:us .
 
 # -------------------------------------------------------------------------------------
 

@@ -1,7 +1,7 @@
 {
   "codeSystems" : [
     {
-      "url" : "http://example.org/CodeSystem/airport-code-system",
+      "url" : "http://hl7.org/fhir/us/reportofilltraveler/CodeSystem/airport-code-system",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "AirportCodesCS",
@@ -9,7 +9,7 @@
       "description" : "A code of USA Airport Codes."
     },
     {
-      "url" : "http://example.org/CodeSystem/infectious-disease-system",
+      "url" : "http://hl7.org/fhir/us/reportofilltraveler/CodeSystem/infectious-disease-system",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "InfectiousDiseaseNameCS",
@@ -17,7 +17,7 @@
       "description" : "A list of Infectious Diseases reportable to CDC."
     },
     {
-      "url" : "http://example.org/CodeSystem/quarantine-station-system",
+      "url" : "http://hl7.org/fhir/us/reportofilltraveler/CodeSystem/quarantine-station-system",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "QuantineStationsCS",

@@ -3,15 +3,15 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="hl7.fhir.us.illTraveler"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>CDCDGMQReportofIllTraveler</h2><p>The official URL for this implementation guide is: </p><pre>http://example.org/ImplementationGuide/hl7.fhir.us.illTraveler</pre><div><p>Implementation Guide CDC DGMQ Report of Ill Traveler</p>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>CDCDGMQReportofIllTraveler</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/us/reportofilltraveler/ImplementationGuide/hl7.fhir.us.illTraveler</pre><div><p>Implementation Guide CDC DGMQ Report of Ill Traveler</p>
 </div></div>
   </text>
-  <url value="http://example.org/ImplementationGuide/hl7.fhir.us.illTraveler"/>
+  <url value="http://hl7.org/fhir/us/reportofilltraveler/ImplementationGuide/hl7.fhir.us.illTraveler"/>
   <version value="0.1.0"/>
   <name value="CDCDGMQReportofIllTraveler"/>
   <title value="CDC DGMQ Report of Ill Traveler"/>
   <status value="draft"/>
-  <date value="2023-11-28T21:37:28-05:00"/>
+  <date value="2023-12-05T13:08:56-05:00"/>
   <publisher value="HL7 Public Health Working Group"/>
   <contact>
     <name value="HL7 Public Health Working Group"/>
@@ -81,6 +81,14 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
+        <valueString value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/us/reportofilltraveler/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
         <valueString value="autoload-resources"/>
       </extension>
       <extension url="value">
@@ -133,14 +141,6 @@
       </extension>
       <extension url="value">
         <valueString value="input/ignoreWarnings.txt"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="path-history"/>
-      </extension>
-      <extension url="value">
-        <valueString value="http://example.org/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -292,6 +292,14 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
+        <valueCode value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/us/reportofilltraveler/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
         <valueCode value="autoload-resources"/>
       </extension>
       <extension url="value">
@@ -344,14 +352,6 @@
       </extension>
       <extension url="value">
         <valueString value="input/ignoreWarnings.txt"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueCode value="path-history"/>
-      </extension>
-      <extension url="value">
-        <valueString value="http://example.org/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -523,22 +523,11 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/flight-duration"/>
+        <reference value="StructureDefinition/flight-details"/>
       </reference>
-      <name value="Duration of the flight"/>
-      <description value="Length of time on the airplane from gate to gate"/>
+      <name value="Flight Details"/>
+      <description value="Flight Details provides details about a single flight that the ill traveler was a passenger on. &#xD;&#xA;It does not cover each leg of an itinerary. Each leg requires a flightDetail"/>
       <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/FlightExample"/>
-      </reference>
-      <name value="FlightExample"/>
-      <description value="An example of a flight itinerary."/>
-      <exampleCanonical value="http://example.org/StructureDefinition/FlightItinerary"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -619,6 +608,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/MultipleLegFlightExample"/>
+      </reference>
+      <name value="MultipleLegFlightExample"/>
+      <description value="An example of a flight itinerary with multiple flights."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/FlightItinerary"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -681,7 +681,7 @@
       </reference>
       <name value="Report of Ill Traveler"/>
       <description value="An example of a report of an ill traveler."/>
-      <exampleCanonical value="http://example.org/StructureDefinition/ReportOfIllTraveler"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/ReportOfIllTraveler"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -693,6 +693,17 @@
       <name value="ReportOfIllTraveler"/>
       <description value="Report of an ill traveler"/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/SingleLegFlightExample"/>
+      </reference>
+      <name value="SingleLegFlightExample"/>
+      <description value="An example of a flight itinerary with only one flight."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/FlightItinerary"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -725,7 +736,7 @@
       </reference>
       <name value="travelerExample"/>
       <description value="An example of a patient with a license to krill."/>
-      <exampleCanonical value="http://example.org/StructureDefinition/Traveler"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/Traveler"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -747,7 +758,7 @@
       </reference>
       <name value="TuberculosisExample"/>
       <description value="An example of Tuberculosis."/>
-      <exampleCanonical value="http://example.org/StructureDefinition/InfectiousDisease"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/InfectiousDisease"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">

@@ -4,49 +4,105 @@
   "fhirVersion": "4.0.1",
   "extensions": [
     {
-      "url": "http://example.org/StructureDefinition/chest-xray",
+      "url": "http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/chest-xray",
       "title": "Chest X-ray",
       "types": [
         "Reference"
       ]
     },
     {
-      "url": "http://example.org/StructureDefinition/disease-name",
+      "url": "http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/disease-name",
       "title": "Name of Disease",
       "types": [
         "CodeableConcept"
       ]
     },
     {
-      "url": "http://example.org/StructureDefinition/flight-duration",
-      "title": "Duration of the flight",
+      "url": "http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/flight-details",
+      "title": "Flight Details",
       "types": [
-        "decimal"
+        "CodeableConcept",
+        "CodeableConcept",
+        "string",
+        "string",
+        "string",
+        "boolean",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
       ]
     },
     {
-      "url": "http://example.org/StructureDefinition/lab-results",
+      "url": "http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/lab-results",
       "title": "Lab Results",
       "types": [
         "Reference"
       ]
     },
     {
-      "url": "http://example.org/StructureDefinition/qstation-name",
+      "url": "http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/qstation-name",
       "title": "Q-station Name",
       "types": [
         "CodeableConcept"
       ]
     },
     {
-      "url": "http://example.org/StructureDefinition/rash-onset",
+      "url": "http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/rash-onset",
       "title": "Rash Onset Date",
       "types": [
         "date"
       ]
     },
     {
-      "url": "http://example.org/StructureDefinition/transfer-date",
+      "url": "http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/transfer-date",
       "title": "Ill traveler transfer date",
       "types": [
         "date"
@@ -56,48 +112,30 @@
   "profiles": {
     "Observation": [
       {
-        "url": "http://example.org/StructureDefinition/FlightItinerary",
+        "url": "http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/FlightItinerary",
         "title": "FlightItinerary"
       }
     ],
     "Condition": [
       {
-        "url": "http://example.org/StructureDefinition/InfectiousDisease",
+        "url": "http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/InfectiousDisease",
         "title": "InfectiousDisease"
       }
     ],
     "Composition": [
       {
-        "url": "http://example.org/StructureDefinition/ReportOfIllTraveler",
+        "url": "http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/ReportOfIllTraveler",
         "title": "ReportOfIllTraveler"
       }
     ],
     "Patient": [
       {
-        "url": "http://example.org/StructureDefinition/Traveler",
+        "url": "http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/Traveler",
         "title": "Traveler"
       }
     ]
   },
   "usage": {
-    "http://example.org/StructureDefinition/chest-xray": [
-      "Condition.evidence"
-    ],
-    "http://example.org/StructureDefinition/disease-name": [
-      "Condition"
-    ],
-    "http://example.org/StructureDefinition/flight-duration": [
-      "Observation"
-    ],
-    "http://example.org/StructureDefinition/qstation-name": [
-      "Composition"
-    ],
-    "http://example.org/StructureDefinition/rash-onset": [
-      "Condition.evidence"
-    ],
-    "http://example.org/StructureDefinition/transfer-date": [
-      "Composition"
-    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
     ],
@@ -152,6 +190,24 @@
     ],
     "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race": [
       "Patient"
+    ],
+    "http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/chest-xray": [
+      "Condition.evidence"
+    ],
+    "http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/disease-name": [
+      "Condition"
+    ],
+    "http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/flight-details": [
+      "Observation"
+    ],
+    "http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/qstation-name": [
+      "Composition"
+    ],
+    "http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/rash-onset": [
+      "Condition.evidence"
+    ],
+    "http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/transfer-date": [
+      "Composition"
     ]
   }
 }

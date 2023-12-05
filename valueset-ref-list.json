@@ -1,32 +1,36 @@
 {
   "codeSystems" : [
     {
-      "url" : "http://example.org/ValueSet/AirportCodeVS",
+      "url" : "http://hl7.org/fhir/us/reportofilltraveler/ValueSet/AirportCodeVS",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "AirportCodeVS",
       "title" : "Airport Codes VS",
       "description" : "A list of USA Airport Codes.",
-      "systems" : ["http://example.org/CodeSystem/airport-code-system"],
+      "systems" : [
+        "http://hl7.org/fhir/us/reportofilltraveler/CodeSystem/airport-code-system"
+      ],
       "uses" : {
       },
-      "StructureDefinition-FlightItinerary.html" : "FlightItinerary",
-      "StructureDefinition-InfectiousDisease.html" : "InfectiousDisease"
+      "StructureDefinition-InfectiousDisease.html" : "InfectiousDisease",
+      "StructureDefinition-flight-details.html" : "Flight Details"
     },
     {
-      "url" : "http://example.org/ValueSet/InfectiousDiseaseNameVS",
+      "url" : "http://hl7.org/fhir/us/reportofilltraveler/ValueSet/InfectiousDiseaseNameVS",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "InfectiousDiseaseNameVS",
       "title" : "Infectious Disease VS",
       "description" : "A list of all Valid Tuberculosis Codes.",
-      "systems" : ["http://example.org/CodeSystem/infectious-disease-system"],
+      "systems" : [
+        "http://hl7.org/fhir/us/reportofilltraveler/CodeSystem/infectious-disease-system"
+      ],
       "uses" : {
       },
       "StructureDefinition-disease-name.html" : "Name of Disease"
     },
     {
-      "url" : "http://example.org/ValueSet/InfectiousDiseaseVS",
+      "url" : "http://hl7.org/fhir/us/reportofilltraveler/ValueSet/InfectiousDiseaseVS",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "InfectiousDiseaseVS",
@@ -35,19 +39,21 @@
       "systems" : ["http://snomed.info/sct"]
     },
     {
-      "url" : "http://example.org/ValueSet/QstationsVS",
+      "url" : "http://hl7.org/fhir/us/reportofilltraveler/ValueSet/QstationsVS",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "QstationsVS",
       "title" : "Quarintine Stations VS",
       "description" : "A list of all US Quarantine Stations.",
-      "systems" : ["http://example.org/CodeSystem/quarantine-station-system"],
+      "systems" : [
+        "http://hl7.org/fhir/us/reportofilltraveler/CodeSystem/quarantine-station-system"
+      ],
       "uses" : {
       },
       "StructureDefinition-qstation-name.html" : "Q-station Name"
     },
     {
-      "url" : "http://example.org/ValueSet/TuberculosisVS",
+      "url" : "http://hl7.org/fhir/us/reportofilltraveler/ValueSet/TuberculosisVS",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "TuberculosisVS",

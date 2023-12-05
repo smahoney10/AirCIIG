@@ -3,14 +3,14 @@
   "id" : "hl7.fhir.us.illTraveler",
   "text" : {
     "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CDCDGMQReportofIllTraveler</h2><p>The official URL for this implementation guide is: </p><pre>http://example.org/ImplementationGuide/hl7.fhir.us.illTraveler</pre><div><p>Implementation Guide CDC DGMQ Report of Ill Traveler</p>\n</div></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CDCDGMQReportofIllTraveler</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/us/reportofilltraveler/ImplementationGuide/hl7.fhir.us.illTraveler</pre><div><p>Implementation Guide CDC DGMQ Report of Ill Traveler</p>\n</div></div>"
   },
-  "url" : "http://example.org/ImplementationGuide/hl7.fhir.us.illTraveler",
+  "url" : "http://hl7.org/fhir/us/reportofilltraveler/ImplementationGuide/hl7.fhir.us.illTraveler",
   "version" : "0.1.0",
   "name" : "CDCDGMQReportofIllTraveler",
   "title" : "CDC DGMQ Report of Ill Traveler",
   "status" : "draft",
-  "date" : "2023-11-28T21:37:28-05:00",
+  "date" : "2023-12-05T13:08:56-05:00",
   "publisher" : "HL7 Public Health Working Group",
   "contact" : [{
     "name" : "HL7 Public Health Working Group",
@@ -96,6 +96,17 @@
     {
       "extension" : [{
         "url" : "code",
+        "valueString" : "path-history"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://hl7.org/fhir/us/reportofilltraveler/history.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
         "valueString" : "autoload-resources"
       },
       {
@@ -167,17 +178,6 @@
       {
         "url" : "value",
         "valueString" : "input/ignoreWarnings.txt"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "path-history"
-      },
-      {
-        "url" : "value",
-        "valueString" : "http://example.org/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -386,6 +386,17 @@
     {
       "extension" : [{
         "url" : "code",
+        "valueCode" : "path-history"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://hl7.org/fhir/us/reportofilltraveler/history.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
         "valueCode" : "autoload-resources"
       },
       {
@@ -457,17 +468,6 @@
       {
         "url" : "value",
         "valueString" : "input/ignoreWarnings.txt"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "path-history"
-      },
-      {
-        "url" : "value",
-        "valueString" : "http://example.org/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -690,23 +690,11 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/flight-duration"
+        "reference" : "StructureDefinition/flight-details"
       },
-      "name" : "Duration of the flight",
-      "description" : "Length of time on the airplane from gate to gate",
+      "name" : "Flight Details",
+      "description" : "Flight Details provides details about a single flight that the ill traveler was a passenger on. \r\nIt does not cover each leg of an itinerary. Each leg requires a flightDetail",
       "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/FlightExample"
-      },
-      "name" : "FlightExample",
-      "description" : "An example of a flight itinerary.",
-      "exampleCanonical" : "http://example.org/StructureDefinition/FlightItinerary"
     },
     {
       "extension" : [{
@@ -795,6 +783,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/MultipleLegFlightExample"
+      },
+      "name" : "MultipleLegFlightExample",
+      "description" : "An example of a flight itinerary with multiple flights.",
+      "exampleCanonical" : "http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/FlightItinerary"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
@@ -862,7 +862,7 @@
       },
       "name" : "Report of Ill Traveler",
       "description" : "An example of a report of an ill traveler.",
-      "exampleCanonical" : "http://example.org/StructureDefinition/ReportOfIllTraveler"
+      "exampleCanonical" : "http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/ReportOfIllTraveler"
     },
     {
       "extension" : [{
@@ -875,6 +875,18 @@
       "name" : "ReportOfIllTraveler",
       "description" : "Report of an ill traveler",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/SingleLegFlightExample"
+      },
+      "name" : "SingleLegFlightExample",
+      "description" : "An example of a flight itinerary with only one flight.",
+      "exampleCanonical" : "http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/FlightItinerary"
     },
     {
       "extension" : [{
@@ -910,7 +922,7 @@
       },
       "name" : "travelerExample",
       "description" : "An example of a patient with a license to krill.",
-      "exampleCanonical" : "http://example.org/StructureDefinition/Traveler"
+      "exampleCanonical" : "http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/Traveler"
     },
     {
       "extension" : [{
@@ -934,7 +946,7 @@
       },
       "name" : "TuberculosisExample",
       "description" : "An example of Tuberculosis.",
-      "exampleCanonical" : "http://example.org/StructureDefinition/InfectiousDisease"
+      "exampleCanonical" : "http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/InfectiousDisease"
     }],
     "page" : {
       "extension" : [{

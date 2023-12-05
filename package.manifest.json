@@ -1,6 +1,6 @@
 {
   "version" : "0.1.0",
   "fhirVersion" : ["4.0.1"],
-  "date" : "20231128213652",
+  "date" : "20231205130814",
   "name" : "hl7.fhir.us.illTraveler"
 }

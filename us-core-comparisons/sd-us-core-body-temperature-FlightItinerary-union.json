@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "0d17484c-5e62-4f4c-b114-05e19e010a1e-26",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/0d17484c-5e62-4f4c-b114-05e19e010a1e-26",
+  "id" : "3615e911-f5f6-4bee-b96d-ba4b03decb78-26",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/3615e911-f5f6-4bee-b96d-ba4b03decb78-26",
   "name" : "UnionUSCoreBodyTemperatureProfileAndFlightItinerary",
   "title" : "Union of US Core Body Temperature Profile And null",
   "status" : "active",
-  "date" : "2023-11-28T21:37:35-05:00",
+  "date" : "2023-12-05T13:09:03-05:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -628,7 +628,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "left: The vital sign codes from the base FHIR and US Core Vital Signs.; right: Codes identifying names of simple observations.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/0d17484c-5e62-4f4c-b114-05e19e010a1e-5"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/3615e911-f5f6-4bee-b96d-ba4b03decb78-5"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -998,7 +998,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "left: Common UCUM units for recording Vital Signs.; right: Transport Vehicle Type",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/0d17484c-5e62-4f4c-b114-05e19e010a1e-8"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/3615e911-f5f6-4bee-b96d-ba4b03decb78-8"
       },
       "mapping" : [{
         "identity" : "sct-concept",
@@ -1936,7 +1936,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "left: The vital sign codes from the base FHIR and US Core Vital Signs.; right: Codes identifying names of simple observations.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/0d17484c-5e62-4f4c-b114-05e19e010a1e-5"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/3615e911-f5f6-4bee-b96d-ba4b03decb78-5"
       },
       "mapping" : [{
         "identity" : "w5",

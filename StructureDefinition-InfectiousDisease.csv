@@ -24,7 +24,7 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Condition.extension:infectious-disease-name","Condition.extension","infectious-disease-name","","",1,1,"Y","","","Extension {[CanonicalType[http://example.org/StructureDefinition/disease-name]]} {[]}
+"Condition.extension:infectious-disease-name","Condition.extension","infectious-disease-name","","",1,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/disease-name]]} {[]}
 ","Name of the Infectious Disease","Name of the infectious disease the traveler has/may have","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -71,7 +71,7 @@ OR < 272379006 |Event|","PRB-3",".value","FiveWs.what[x]","246090004"
 ","Anatomical location, if relevant","The anatomical location where this condition manifests itself.","Only used if not implicit in code found in Condition.code. If the use case requires attributes from the BodySite resource (e.g. to identify and track separately) then use the standard extension [bodySite](http://hl7.org/fhir/R4/extension-bodysite.html).  May be a summary code, or a reference to a very precise definition of the location, or both.","","","","","","","","",,"example","Codes describing anatomical locations. May include laterality.","http://hl7.org/fhir/ValueSet/body-site","",,,,"Condition.bodySite",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","< 442083009  |Anatomical or acquired body structure|",".targetBodySiteCode","363698007"
 "Condition.subject","Condition.subject","","patient
-","",1,1,"","","Y","Reference {[]} {[CanonicalType[http://example.org/StructureDefinition/Traveler]]}
+","",1,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/Traveler]]}
 ","Who has the condition?","Indicates the patient or group who the condition record is associated with.","","Group is typically used for veterinary or public health use cases.","","","","","","","",,,,,"",,,,"Condition.subject",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.subject","PID-3",".participation[typeCode=SBJ].role[classCode=PAT]","FiveWs.subject[x]","FiveWs.subject"
 "Condition.encounter","Condition.encounter","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Encounter]]}
@@ -152,7 +152,7 @@ ele-1:All FHIR elements must have a @value or children {hasValue() or (children(
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Condition.evidence:tuberculosis.extension:chestXrayResults","Condition.evidence.extension","chestXrayResults","","",0,1,"","","","Extension {[CanonicalType[http://example.org/StructureDefinition/chest-xray]]} {[]}
+"Condition.evidence:tuberculosis.extension:chestXrayResults","Condition.evidence.extension","chestXrayResults","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/chest-xray]]} {[]}
 ","Chest X-ray","Results of X-Ray","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -163,7 +163,7 @@ user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
 Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
 "Condition.evidence:tuberculosis.code","Condition.evidence.code","","","",0,*,"","","Y","CodeableConcept {[]} {[]}
-","Manifestation/symptom","A manifestation or symptom that led to the recording of this condition.","","","","","","","","","",,"required","","http://example.org/ValueSet/TuberculosisVS","",,,,"Condition.evidence.code",0,*,"con-2
+","Manifestation/symptom","A manifestation or symptom that led to the recording of this condition.","","","","","","","","","",,"required","","http://hl7.org/fhir/us/reportofilltraveler/ValueSet/TuberculosisVS","",,,,"Condition.evidence.code",0,*,"con-2
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.reasonCode","< 404684003 |Clinical finding|","[code=""diagnosis""].value","FiveWs.why[x]"
 "Condition.evidence:tuberculosis.detail","Condition.evidence.detail","","","",0,*,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource]]}
@@ -179,7 +179,7 @@ ele-1:All FHIR elements must have a @value or children {hasValue() or (children(
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Condition.evidence:measles.extension:RashOnsetDate","Condition.evidence.extension","RashOnsetDate","","",0,1,"","","","Extension {[CanonicalType[http://example.org/StructureDefinition/rash-onset]]} {[]}
+"Condition.evidence:measles.extension:RashOnsetDate","Condition.evidence.extension","RashOnsetDate","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/rash-onset]]} {[]}
 ","Rash Onset Date","Date when rash appeared","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -190,7 +190,7 @@ user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
 Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
 "Condition.evidence:measles.code","Condition.evidence.code","","","",0,*,"","","Y","CodeableConcept {[]} {[]}
-","Manifestation/symptom","A manifestation or symptom that led to the recording of this condition.","","","","","","","","","",,"required","","http://example.org/ValueSet/AirportCodeVS","",,,,"Condition.evidence.code",0,*,"con-2
+","Manifestation/symptom","A manifestation or symptom that led to the recording of this condition.","","","","","","","","","",,"required","","http://hl7.org/fhir/us/reportofilltraveler/ValueSet/AirportCodeVS","",,,,"Condition.evidence.code",0,*,"con-2
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.reasonCode","< 404684003 |Clinical finding|","[code=""diagnosis""].value","FiveWs.why[x]"
 "Condition.evidence:measles.detail","Condition.evidence.detail","","","",0,*,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource]]}

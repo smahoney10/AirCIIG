@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://example.org/Organization/StateExample> a fhir:Organization ;
+<http://hl7.org/fhir/us/reportofilltraveler/Organization/StateExample> a fhir:Organization ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "StateExample"] ; # 
   fhir:text [

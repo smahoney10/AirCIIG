@@ -5,12 +5,12 @@
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <code>https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.43/expansion</code></li></ul></div>
   </text>
-  <url value="http://example.org/ValueSet/TuberculosisVS"/>
+  <url value="http://hl7.org/fhir/us/reportofilltraveler/ValueSet/TuberculosisVS"/>
   <version value="0.1.0"/>
   <name value="TuberculosisVS"/>
   <title value="Tuberculosis VS"/>
   <status value="draft"/>
-  <date value="2023-11-28T21:37:28-05:00"/>
+  <date value="2023-12-05T13:08:56-05:00"/>
   <publisher value="HL7 Public Health Working Group"/>
   <contact>
     <name value="HL7 Public Health Working Group"/>
