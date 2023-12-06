@@ -1,9 +1,9 @@
 ﻿CDCDGMQReportofIllTraveler : Validation Results
 =========================================
 
-err = 58, warn = 47, info = 2
+err = 60, warn = 48, info = 2
 IG Publisher Version: 1.5.0 Out of date - current version is 1.5.5
-Generated Tue Dec 05 13:11:45 EST 2023. FHIR version 4.0.1 for hl7.fhir.us.illTraveler#0.1.0 (canonical = http://hl7.org/fhir/us/reportofilltraveler)
+Generated Tue Dec 05 18:55:34 EST 2023. FHIR version 4.0.1 for hl7.fhir.us.illTraveler#0.1.0 (canonical = http://hl7.org/fhir/us/reportofilltraveler)
  Build Errors : 2 / 4 / 0
  C:\Users\smahoney\Documents\GitHub\AirCI\fsh-generated\resources\CodeSystem-airport-code-system : 3 / 2 / 1
  C:\Users\smahoney\Documents\GitHub\AirCI\fsh-generated\resources\CodeSystem-infectious-disease-system : 3 / 2 / 1
@@ -17,6 +17,7 @@ Generated Tue Dec 05 13:11:45 EST 2023. FHIR version 4.0.1 for hl7.fhir.us.illTr
  C:\Users\smahoney\Documents\GitHub\AirCI\fsh-generated\resources\Organization-StateExample : 0 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\AirCI\fsh-generated\resources\Patient-travelerExample : 1 / 0 / 1
  C:\Users\smahoney\Documents\GitHub\AirCI\fsh-generated\resources\StructureDefinition-FlightItinerary : 2 / 1 / 1
+ C:\Users\smahoney\Documents\GitHub\AirCI\fsh-generated\resources\StructureDefinition-IllTravelerBundle : 2 / 1 / 1
  C:\Users\smahoney\Documents\GitHub\AirCI\fsh-generated\resources\StructureDefinition-InfectiousDisease : 2 / 1 / 1
  C:\Users\smahoney\Documents\GitHub\AirCI\fsh-generated\resources\StructureDefinition-ReportOfIllTraveler : 2 / 2 / 1
  C:\Users\smahoney\Documents\GitHub\AirCI\fsh-generated\resources\StructureDefinition-Traveler : 2 / 0 / 1
@@ -104,6 +105,10 @@ ERROR: Patient/travelerExample: Patient.gender: The value provided ('Male') is n
 ERROR: StructureDefinition/FlightItinerary: StructureDefinition: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
 ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.us.illTraveler, jurisdiction = urn:iso:std:iso:3166#US) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#US "null"')
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/FlightItinerary').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+== fsh-generated\resources\StructureDefinition-IllTravelerBundle.json ==
+ERROR: StructureDefinition/IllTravelerBundle: StructureDefinition: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.us.illTraveler, jurisdiction = urn:iso:std:iso:3166#US) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#US "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/IllTravelerBundle'): The Implementation Guide contains no examples for this profile
 == fsh-generated\resources\StructureDefinition-InfectiousDisease.json ==
 ERROR: StructureDefinition/InfectiousDisease: StructureDefinition: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
 ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.us.illTraveler, jurisdiction = urn:iso:std:iso:3166#US) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#US "null"')

@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "CDCDGMQReportofIllTraveler"] ; # 
   fhir:title [ fhir:v "CDC DGMQ Report of Ill Traveler"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-12-05T13:08:56-05:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-12-05T18:52:01-05:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Public Health Working Group"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Public Health Working Group" ] ;
@@ -634,6 +634,18 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/IllTravelerBundle> ;
+         fhir:reference [ fhir:v "StructureDefinition/IllTravelerBundle" ]
+       ] ;
+       fhir:name [ fhir:v "IllTravelerBundle" ] ;
+       fhir:description [ fhir:v "A bundle of resources related to a report of an ill traveler." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
@@ -1058,6 +1070,8 @@
 <http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/FlightItinerary> a fhir:us .
 
 <http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/transfer-date> a fhir:us .
+
+<http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/IllTravelerBundle> a fhir:us .
 
 <http://hl7.org/fhir/us/reportofilltraveler/CodeSystem/infectious-disease-system> a fhir:us .
 

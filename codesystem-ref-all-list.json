@@ -37,6 +37,18 @@
       "http://hl7.org/fhir/R4/valueset-administrative-gender.html" : "AdministrativeGender"
     },
     {
+      "url" : "http://hl7.org/fhir/bundle-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "BundleType",
+      "title" : "BundleType",
+      "description" : "Indicates the purpose of a bundle - how it is intended to be used.",
+      "oids" : ["2.16.840.1.113883.4.642.4.621"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-bundle-type.html" : "BundleType"
+    },
+    {
       "url" : "http://hl7.org/fhir/composition-attestation-mode",
       "version" : "4.0.1",
       "status" : "draft",
@@ -95,6 +107,18 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-document-relationship-type.html" : "DocumentRelationshipType"
+    },
+    {
+      "url" : "http://hl7.org/fhir/http-verb",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "HTTPVerb",
+      "title" : "HTTPVerb",
+      "description" : "HTTP verbs (in the HTTP command line). See [HTTP rfc](https://tools.ietf.org/html/rfc7231) for details.",
+      "oids" : ["2.16.840.1.113883.4.642.4.625"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-http-verb.html" : "HTTPVerb"
     },
     {
       "url" : "http://hl7.org/fhir/identifier-use",
@@ -157,6 +181,18 @@
       "http://hl7.org/fhir/R4/valueset-observation-status.html" : "ObservationStatus"
     },
     {
+      "url" : "http://hl7.org/fhir/search-entry-mode",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "SearchEntryMode",
+      "title" : "SearchEntryMode",
+      "description" : "Why an entry is in the result set - whether it's included as a match or because of an _include requirement, or to convey information or warning information about the search process.",
+      "oids" : ["2.16.840.1.113883.4.642.4.623"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-search-entry-mode.html" : "SearchEntryMode"
+    },
+    {
       "url" : "http://hl7.org/fhir/us/reportofilltraveler/CodeSystem/airport-code-system",
       "version" : "0.1.0",
       "status" : "draft",
@@ -199,10 +235,10 @@
       "oids" : ["2.16.840.1.113883.6.1"],
       "uses" : {
       },
+      "http://hl7.org/fhir/R4/valueset-document-classcodes.html" : "Document Class Value Set",
       "http://hl7.org/fhir/R4/valueset-doc-section-codes.html" : "Document Section Codes",
       "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes",
-      "http://hl7.org/fhir/R4/valueset-doc-typecodes.html" : "FHIR Document Type Codes",
-      "http://hl7.org/fhir/R4/valueset-document-classcodes.html" : "Document Class Value Set"
+      "http://hl7.org/fhir/R4/valueset-doc-typecodes.html" : "FHIR Document Type Codes"
     },
     {
       "url" : "http://snomed.info/sct",
@@ -214,16 +250,16 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes",
-      "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
-      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
-      "http://hl7.org/fhir/R4/valueset-condition-stage-type.html" : "Condition Stage Type",
-      "https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.50/expansion" : "Transport vehicle type",
-      "ValueSet-InfectiousDiseaseVS.html" : "Infectious Disease VS",
-      "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
       "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
+      "http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes",
+      "https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.50/expansion" : "Transport vehicle type",
+      "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
+      "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
+      "ValueSet-InfectiousDiseaseVS.html" : "Infectious Disease VS",
+      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
+      "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage",
       "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
-      "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage"
+      "http://hl7.org/fhir/R4/valueset-condition-stage-type.html" : "Condition Stage Type"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/condition-category",

@@ -35,6 +35,13 @@
     "name" : "FlightItinerary"
   },
   {
+    "id" : "IllTravelerBundle",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/IllTravelerBundle",
+    "version" : "0.1.0",
+    "name" : "IllTravelerBundle"
+  },
+  {
     "id" : "InfectiousDisease",
     "type" : "StructureDefinition",
     "url" : "http://hl7.org/fhir/us/reportofilltraveler/StructureDefinition/InfectiousDisease",

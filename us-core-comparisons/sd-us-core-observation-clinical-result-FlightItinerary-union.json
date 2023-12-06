@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "3615e911-f5f6-4bee-b96d-ba4b03decb78-38",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/3615e911-f5f6-4bee-b96d-ba4b03decb78-38",
+  "id" : "368c2f09-13ef-4087-8217-db05fde8fac7-38",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/368c2f09-13ef-4087-8217-db05fde8fac7-38",
   "name" : "UnionUSCoreObservationClinicalResultProfileAndFlightItinerary",
   "title" : "Union of US Core Observation Clinical Result Profile And null",
   "status" : "active",
-  "date" : "2023-12-05T13:09:03-05:00",
+  "date" : "2023-12-05T18:52:11-05:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
